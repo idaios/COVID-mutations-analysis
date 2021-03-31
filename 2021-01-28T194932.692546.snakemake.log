@@ -1,0 +1,2785 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	copy_config_sample_log
+	9	coverage_depth
+	9	generate_coverage_plot
+	9	get_host_removed_reads
+	9	get_mapping_reads
+	18	link_raw_data
+	9	raw_reads_composite_reference_bwa_map
+	9	run_bed_primer_trim
+	9	run_fastqc_on_mapped_reads
+	9	run_filtering_of_residual_adapters
+	9	run_ivar_consensus
+	9	run_ivar_variants
+	9	run_kraken2
+	9	run_quast
+	9	run_raw_fastqc
+	9	run_trimgalore
+	9	viral_reference_bwa_build
+	9	viral_reference_bwa_map
+	164
+Select jobs to execute...
+
+[Thu Jan 28 19:49:33 2021]
+rule link_raw_data:
+    input: /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS0990_R2.fastq.gz
+    output: NGS0990/raw_fastq/NGS0990_R2.fastq.gz
+    jobid: 2
+    wildcards: sn=NGS0990, r=2
+    priority: 4
+
+echo 2; mkdir -p NGS0990/raw_fastq/; cp /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS0990_R2.fastq.gz NGS0990/raw_fastq/NGS0990_R2.fastq.gz;
+
+[Thu Jan 28 19:49:33 2021]
+rule link_raw_data:
+    input: /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1044_R2.fastq.gz
+    output: NGS1044/raw_fastq/NGS1044_R2.fastq.gz
+    jobid: 16
+    wildcards: sn=NGS1044, r=2
+    priority: 4
+
+echo 2; mkdir -p NGS1044/raw_fastq/; cp /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1044_R2.fastq.gz NGS1044/raw_fastq/NGS1044_R2.fastq.gz;
+
+[Thu Jan 28 19:49:33 2021]
+rule link_raw_data:
+    input: /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1045_R2.fastq.gz
+    output: NGS1045/raw_fastq/NGS1045_R2.fastq.gz
+    jobid: 18
+    wildcards: sn=NGS1045, r=2
+    priority: 4
+
+echo 2; mkdir -p NGS1045/raw_fastq/; cp /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1045_R2.fastq.gz NGS1045/raw_fastq/NGS1045_R2.fastq.gz;
+
+[Thu Jan 28 19:49:33 2021]
+rule link_raw_data:
+    input: /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1040_R2.fastq.gz
+    output: NGS1040/raw_fastq/NGS1040_R2.fastq.gz
+    jobid: 8
+    wildcards: sn=NGS1040, r=2
+    priority: 4
+
+echo 2; mkdir -p NGS1040/raw_fastq/; cp /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1040_R2.fastq.gz NGS1040/raw_fastq/NGS1040_R2.fastq.gz;
+
+[Thu Jan 28 19:49:33 2021]
+rule link_raw_data:
+    input: /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1042_R2.fastq.gz
+    output: NGS1042/raw_fastq/NGS1042_R2.fastq.gz
+    jobid: 12
+    wildcards: sn=NGS1042, r=2
+    priority: 4
+
+echo 2; mkdir -p NGS1042/raw_fastq/; cp /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1042_R2.fastq.gz NGS1042/raw_fastq/NGS1042_R2.fastq.gz;
+
+[Thu Jan 28 19:49:33 2021]
+rule link_raw_data:
+    input: /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1001_R2.fastq.gz
+    output: NGS1001/raw_fastq/NGS1001_R2.fastq.gz
+    jobid: 6
+    wildcards: sn=NGS1001, r=2
+    priority: 4
+
+echo 2; mkdir -p NGS1001/raw_fastq/; cp /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1001_R2.fastq.gz NGS1001/raw_fastq/NGS1001_R2.fastq.gz;
+
+[Thu Jan 28 19:49:34 2021]
+rule link_raw_data:
+    input: /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1041_R1.fastq.gz
+    output: NGS1041/raw_fastq/NGS1041_R1.fastq.gz
+    jobid: 9
+    wildcards: sn=NGS1041, r=1
+    priority: 4
+
+echo 1; mkdir -p NGS1041/raw_fastq/; cp /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1041_R1.fastq.gz NGS1041/raw_fastq/NGS1041_R1.fastq.gz;
+
+[Thu Jan 28 19:49:34 2021]
+rule link_raw_data:
+    input: /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1000_R1.fastq.gz
+    output: NGS1000/raw_fastq/NGS1000_R1.fastq.gz
+    jobid: 3
+    wildcards: sn=NGS1000, r=1
+    priority: 4
+
+echo 1; mkdir -p NGS1000/raw_fastq/; cp /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1000_R1.fastq.gz NGS1000/raw_fastq/NGS1000_R1.fastq.gz;
+[Thu Jan 28 19:49:36 2021]
+Finished job 2.
+1 of 164 steps (0.61%) done
+Select jobs to execute...
+
+[Thu Jan 28 19:49:36 2021]
+rule link_raw_data:
+    input: /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1000_R2.fastq.gz
+    output: NGS1000/raw_fastq/NGS1000_R2.fastq.gz
+    jobid: 4
+    wildcards: sn=NGS1000, r=2
+    priority: 4
+
+echo 2; mkdir -p NGS1000/raw_fastq/; cp /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1000_R2.fastq.gz NGS1000/raw_fastq/NGS1000_R2.fastq.gz;
+[Thu Jan 28 19:49:38 2021]
+Finished job 6.
+2 of 164 steps (1%) done
+Select jobs to execute...
+
+[Thu Jan 28 19:49:39 2021]
+rule link_raw_data:
+    input: /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1043_R2.fastq.gz
+    output: NGS1043/raw_fastq/NGS1043_R2.fastq.gz
+    jobid: 14
+    wildcards: sn=NGS1043, r=2
+    priority: 4
+
+echo 2; mkdir -p NGS1043/raw_fastq/; cp /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1043_R2.fastq.gz NGS1043/raw_fastq/NGS1043_R2.fastq.gz;
+[Thu Jan 28 19:49:43 2021]
+Finished job 3.
+3 of 164 steps (2%) done
+Select jobs to execute...
+
+[Thu Jan 28 19:49:43 2021]
+rule link_raw_data:
+    input: /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1001_R1.fastq.gz
+    output: NGS1001/raw_fastq/NGS1001_R1.fastq.gz
+    jobid: 5
+    wildcards: sn=NGS1001, r=1
+    priority: 4
+
+echo 1; mkdir -p NGS1001/raw_fastq/; cp /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1001_R1.fastq.gz NGS1001/raw_fastq/NGS1001_R1.fastq.gz;
+[Thu Jan 28 19:49:44 2021]
+Finished job 4.
+4 of 164 steps (2%) done
+Select jobs to execute...
+
+[Thu Jan 28 19:49:44 2021]
+rule link_raw_data:
+    input: /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1041_R2.fastq.gz
+    output: NGS1041/raw_fastq/NGS1041_R2.fastq.gz
+    jobid: 10
+    wildcards: sn=NGS1041, r=2
+    priority: 4
+
+echo 2; mkdir -p NGS1041/raw_fastq/; cp /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1041_R2.fastq.gz NGS1041/raw_fastq/NGS1041_R2.fastq.gz;
+[Thu Jan 28 19:49:45 2021]
+Finished job 14.
+5 of 164 steps (3%) done
+Select jobs to execute...
+
+[Thu Jan 28 19:49:45 2021]
+rule link_raw_data:
+    input: /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1040_R1.fastq.gz
+    output: NGS1040/raw_fastq/NGS1040_R1.fastq.gz
+    jobid: 7
+    wildcards: sn=NGS1040, r=1
+    priority: 4
+
+echo 1; mkdir -p NGS1040/raw_fastq/; cp /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1040_R1.fastq.gz NGS1040/raw_fastq/NGS1040_R1.fastq.gz;
+[Thu Jan 28 19:49:49 2021]
+Finished job 5.
+6 of 164 steps (4%) done
+Select jobs to execute...
+
+[Thu Jan 28 19:49:49 2021]
+rule link_raw_data:
+    input: /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1045_R1.fastq.gz
+    output: NGS1045/raw_fastq/NGS1045_R1.fastq.gz
+    jobid: 17
+    wildcards: sn=NGS1045, r=1
+    priority: 4
+
+echo 1; mkdir -p NGS1045/raw_fastq/; cp /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1045_R1.fastq.gz NGS1045/raw_fastq/NGS1045_R1.fastq.gz;
+[Thu Jan 28 19:49:50 2021]
+Finished job 9.
+7 of 164 steps (4%) done
+Select jobs to execute...
+
+[Thu Jan 28 19:49:50 2021]
+rule link_raw_data:
+    input: /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1044_R1.fastq.gz
+    output: NGS1044/raw_fastq/NGS1044_R1.fastq.gz
+    jobid: 15
+    wildcards: sn=NGS1044, r=1
+    priority: 4
+
+echo 1; mkdir -p NGS1044/raw_fastq/; cp /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1044_R1.fastq.gz NGS1044/raw_fastq/NGS1044_R1.fastq.gz;
+[Thu Jan 28 19:50:02 2021]
+Finished job 10.
+8 of 164 steps (5%) done
+Select jobs to execute...
+
+[Thu Jan 28 19:50:02 2021]
+rule link_raw_data:
+    input: /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS0990_R1.fastq.gz
+    output: NGS0990/raw_fastq/NGS0990_R1.fastq.gz
+    jobid: 1
+    wildcards: sn=NGS0990, r=1
+    priority: 4
+
+echo 1; mkdir -p NGS0990/raw_fastq/; cp /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS0990_R1.fastq.gz NGS0990/raw_fastq/NGS0990_R1.fastq.gz;
+[Thu Jan 28 19:50:07 2021]
+Finished job 16.
+9 of 164 steps (5%) done
+Select jobs to execute...
+[Thu Jan 28 19:50:07 2021]
+Finished job 1.
+10 of 164 steps (6%) done
+
+[Thu Jan 28 19:50:08 2021]
+rule link_raw_data:
+    input: /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1043_R1.fastq.gz
+    output: NGS1043/raw_fastq/NGS1043_R1.fastq.gz
+    jobid: 13
+    wildcards: sn=NGS1043, r=1
+    priority: 4
+
+echo 1; mkdir -p NGS1043/raw_fastq/; cp /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1043_R1.fastq.gz NGS1043/raw_fastq/NGS1043_R1.fastq.gz;
+Select jobs to execute...
+
+[Thu Jan 28 19:50:08 2021]
+rule link_raw_data:
+    input: /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1042_R1.fastq.gz
+    output: NGS1042/raw_fastq/NGS1042_R1.fastq.gz
+    jobid: 11
+    wildcards: sn=NGS1042, r=1
+    priority: 4
+
+echo 1; mkdir -p NGS1042/raw_fastq/; cp /home/maria/covid_analysis_pavlos/dec_10/fastq/NGS1042_R1.fastq.gz NGS1042/raw_fastq/NGS1042_R1.fastq.gz;
+[Thu Jan 28 19:50:14 2021]
+Finished job 13.
+11 of 164 steps (7%) done
+Select jobs to execute...
+
+[Thu Jan 28 19:50:14 2021]
+rule run_raw_fastqc:
+    input: NGS1041/raw_fastq/NGS1041_R1.fastq.gz, NGS1041/raw_fastq/NGS1041_R2.fastq.gz
+    output: NGS1041/raw_fastq/NGS1041_R1_fastqc.html, NGS1041/raw_fastq/NGS1041_R2_fastqc.html
+    log: NGS1041/raw_fastq/NGS1041_fastqc.log
+    jobid: 59
+    benchmark: NGS1041/benchmarks/NGS1041_raw_fastqc.benchmark.tsv
+    wildcards: sn=NGS1041
+
+
+        fastqc -o NGS1041/raw_fastq NGS1041/raw_fastq/NGS1041_R1.fastq.gz NGS1041/raw_fastq/NGS1041_R2.fastq.gz 2> NGS1041/raw_fastq/NGS1041_fastqc.log
+        
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+[Thu Jan 28 19:50:26 2021]
+Finished job 15.
+12 of 164 steps (7%) done
+[Thu Jan 28 19:50:26 2021]
+Finished job 12.
+13 of 164 steps (8%) done
+Select jobs to execute...
+[Thu Jan 28 19:50:27 2021]
+Finished job 18.
+14 of 164 steps (9%) done
+
+[Thu Jan 28 19:50:27 2021]
+rule run_raw_fastqc:
+    input: NGS1043/raw_fastq/NGS1043_R1.fastq.gz, NGS1043/raw_fastq/NGS1043_R2.fastq.gz
+    output: NGS1043/raw_fastq/NGS1043_R1_fastqc.html, NGS1043/raw_fastq/NGS1043_R2_fastqc.html
+    log: NGS1043/raw_fastq/NGS1043_fastqc.log
+    jobid: 61
+    benchmark: NGS1043/benchmarks/NGS1043_raw_fastqc.benchmark.tsv
+    wildcards: sn=NGS1043
+
+
+        fastqc -o NGS1043/raw_fastq NGS1043/raw_fastq/NGS1043_R1.fastq.gz NGS1043/raw_fastq/NGS1043_R2.fastq.gz 2> NGS1043/raw_fastq/NGS1043_fastqc.log
+        
+
+[Thu Jan 28 19:50:27 2021]
+rule viral_reference_bwa_build:
+    input: /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta
+    output: NGS0990/core/viral_reference.bwt
+    log: NGS0990/core/NGS0990_viral_reference_bwa-build.log
+    jobid: 68
+    benchmark: NGS0990/benchmarks/NGS0990_reference_bwa_build.benchmark.tsv
+    wildcards: sn=NGS0990
+
+bwa index -p NGS0990/core/viral_reference /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta >NGS0990/core/NGS0990_viral_reference_bwa-build.log 2>&1
+
+[Thu Jan 28 19:50:27 2021]
+rule viral_reference_bwa_build:
+    input: /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta
+    output: NGS1040/core/viral_reference.bwt
+    log: NGS1040/core/NGS1040_viral_reference_bwa-build.log
+    jobid: 83
+    benchmark: NGS1040/benchmarks/NGS1040_reference_bwa_build.benchmark.tsv
+    wildcards: sn=NGS1040
+
+bwa index -p NGS1040/core/viral_reference /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta >NGS1040/core/NGS1040_viral_reference_bwa-build.log 2>&1
+Select jobs to execute...
+Select jobs to execute...
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 19:50:33 2021]
+Finished job 8.
+15 of 164 steps (9%) done
+Select jobs to execute...
+
+[Thu Jan 28 19:50:33 2021]
+rule run_raw_fastqc:
+    input: NGS1044/raw_fastq/NGS1044_R1.fastq.gz, NGS1044/raw_fastq/NGS1044_R2.fastq.gz
+    output: NGS1044/raw_fastq/NGS1044_R1_fastqc.html, NGS1044/raw_fastq/NGS1044_R2_fastqc.html
+    log: NGS1044/raw_fastq/NGS1044_fastqc.log
+    jobid: 62
+    benchmark: NGS1044/benchmarks/NGS1044_raw_fastqc.benchmark.tsv
+    wildcards: sn=NGS1044
+
+
+        fastqc -o NGS1044/raw_fastq NGS1044/raw_fastq/NGS1044_R1.fastq.gz NGS1044/raw_fastq/NGS1044_R2.fastq.gz 2> NGS1044/raw_fastq/NGS1044_fastqc.log
+        
+[Thu Jan 28 19:50:35 2021]
+Finished job 17.
+16 of 164 steps (10%) done
+[Thu Jan 28 19:50:35 2021]
+Finished job 68.
+17 of 164 steps (10%) done
+Select jobs to execute...
+[Thu Jan 28 19:50:35 2021]
+Finished job 83.
+18 of 164 steps (11%) done
+
+[Thu Jan 28 19:50:35 2021]
+rule viral_reference_bwa_build:
+    input: /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta
+    output: NGS1042/core/viral_reference.bwt
+    log: NGS1042/core/NGS1042_viral_reference_bwa-build.log
+    jobid: 93
+    benchmark: NGS1042/benchmarks/NGS1042_reference_bwa_build.benchmark.tsv
+    wildcards: sn=NGS1042
+
+bwa index -p NGS1042/core/viral_reference /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta >NGS1042/core/NGS1042_viral_reference_bwa-build.log 2>&1
+
+[Thu Jan 28 19:50:35 2021]
+rule viral_reference_bwa_build:
+    input: /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta
+    output: NGS1001/core/viral_reference.bwt
+    log: NGS1001/core/NGS1001_viral_reference_bwa-build.log
+    jobid: 78
+    benchmark: NGS1001/benchmarks/NGS1001_reference_bwa_build.benchmark.tsv
+    wildcards: sn=NGS1001
+
+bwa index -p NGS1001/core/viral_reference /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta >NGS1001/core/NGS1001_viral_reference_bwa-build.log 2>&1
+
+[Thu Jan 28 19:50:36 2021]
+rule run_raw_fastqc:
+    input: NGS0990/raw_fastq/NGS0990_R1.fastq.gz, NGS0990/raw_fastq/NGS0990_R2.fastq.gz
+    output: NGS0990/raw_fastq/NGS0990_R1_fastqc.html, NGS0990/raw_fastq/NGS0990_R2_fastqc.html
+    log: NGS0990/raw_fastq/NGS0990_fastqc.log
+    jobid: 55
+    benchmark: NGS0990/benchmarks/NGS0990_raw_fastqc.benchmark.tsv
+    wildcards: sn=NGS0990
+
+
+        fastqc -o NGS0990/raw_fastq NGS0990/raw_fastq/NGS0990_R1.fastq.gz NGS0990/raw_fastq/NGS0990_R2.fastq.gz 2> NGS0990/raw_fastq/NGS0990_fastqc.log
+        
+Select jobs to execute...
+Select jobs to execute...
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 19:50:38 2021]
+Finished job 7.
+19 of 164 steps (12%) done
+Select jobs to execute...
+
+[Thu Jan 28 19:50:38 2021]
+rule viral_reference_bwa_build:
+    input: /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta
+    output: NGS1044/core/viral_reference.bwt
+    log: NGS1044/core/NGS1044_viral_reference_bwa-build.log
+    jobid: 103
+    benchmark: NGS1044/benchmarks/NGS1044_reference_bwa_build.benchmark.tsv
+    wildcards: sn=NGS1044
+
+bwa index -p NGS1044/core/viral_reference /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta >NGS1044/core/NGS1044_viral_reference_bwa-build.log 2>&1
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+[Thu Jan 28 19:50:39 2021]
+Finished job 11.
+20 of 164 steps (12%) done
+Select jobs to execute...
+
+[Thu Jan 28 19:50:39 2021]
+rule run_raw_fastqc:
+    input: NGS1040/raw_fastq/NGS1040_R1.fastq.gz, NGS1040/raw_fastq/NGS1040_R2.fastq.gz
+    output: NGS1040/raw_fastq/NGS1040_R1_fastqc.html, NGS1040/raw_fastq/NGS1040_R2_fastqc.html
+    log: NGS1040/raw_fastq/NGS1040_fastqc.log
+    jobid: 58
+    benchmark: NGS1040/benchmarks/NGS1040_raw_fastqc.benchmark.tsv
+    wildcards: sn=NGS1040
+
+
+        fastqc -o NGS1040/raw_fastq NGS1040/raw_fastq/NGS1040_R1.fastq.gz NGS1040/raw_fastq/NGS1040_R2.fastq.gz 2> NGS1040/raw_fastq/NGS1040_fastqc.log
+        
+[Thu Jan 28 19:50:39 2021]
+Finished job 93.
+21 of 164 steps (13%) done
+[Thu Jan 28 19:50:39 2021]
+Finished job 78.
+22 of 164 steps (13%) done
+Select jobs to execute...
+
+[Thu Jan 28 19:50:39 2021]
+rule run_raw_fastqc:
+    input: NGS1001/raw_fastq/NGS1001_R1.fastq.gz, NGS1001/raw_fastq/NGS1001_R2.fastq.gz
+    output: NGS1001/raw_fastq/NGS1001_R1_fastqc.html, NGS1001/raw_fastq/NGS1001_R2_fastqc.html
+    log: NGS1001/raw_fastq/NGS1001_fastqc.log
+    jobid: 57
+    benchmark: NGS1001/benchmarks/NGS1001_raw_fastqc.benchmark.tsv
+    wildcards: sn=NGS1001
+
+
+        fastqc -o NGS1001/raw_fastq NGS1001/raw_fastq/NGS1001_R1.fastq.gz NGS1001/raw_fastq/NGS1001_R2.fastq.gz 2> NGS1001/raw_fastq/NGS1001_fastqc.log
+        
+
+[Thu Jan 28 19:50:39 2021]
+rule run_raw_fastqc:
+    input: NGS1000/raw_fastq/NGS1000_R1.fastq.gz, NGS1000/raw_fastq/NGS1000_R2.fastq.gz
+    output: NGS1000/raw_fastq/NGS1000_R1_fastqc.html, NGS1000/raw_fastq/NGS1000_R2_fastqc.html
+    log: NGS1000/raw_fastq/NGS1000_fastqc.log
+    jobid: 56
+    benchmark: NGS1000/benchmarks/NGS1000_raw_fastqc.benchmark.tsv
+    wildcards: sn=NGS1000
+
+
+        fastqc -o NGS1000/raw_fastq NGS1000/raw_fastq/NGS1000_R1.fastq.gz NGS1000/raw_fastq/NGS1000_R2.fastq.gz 2> NGS1000/raw_fastq/NGS1000_fastqc.log
+        
+Select jobs to execute...
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 19:50:42 2021]
+Finished job 103.
+23 of 164 steps (14%) done
+Select jobs to execute...
+
+[Thu Jan 28 19:50:42 2021]
+rule viral_reference_bwa_build:
+    input: /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta
+    output: NGS1045/core/viral_reference.bwt
+    log: NGS1045/core/NGS1045_viral_reference_bwa-build.log
+    jobid: 108
+    benchmark: NGS1045/benchmarks/NGS1045_reference_bwa_build.benchmark.tsv
+    wildcards: sn=NGS1045
+
+bwa index -p NGS1045/core/viral_reference /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta >NGS1045/core/NGS1045_viral_reference_bwa-build.log 2>&1
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 19:50:46 2021]
+Finished job 108.
+24 of 164 steps (15%) done
+Select jobs to execute...
+
+[Thu Jan 28 19:50:46 2021]
+rule run_raw_fastqc:
+    input: NGS1042/raw_fastq/NGS1042_R1.fastq.gz, NGS1042/raw_fastq/NGS1042_R2.fastq.gz
+    output: NGS1042/raw_fastq/NGS1042_R1_fastqc.html, NGS1042/raw_fastq/NGS1042_R2_fastqc.html
+    log: NGS1042/raw_fastq/NGS1042_fastqc.log
+    jobid: 60
+    benchmark: NGS1042/benchmarks/NGS1042_raw_fastqc.benchmark.tsv
+    wildcards: sn=NGS1042
+
+
+        fastqc -o NGS1042/raw_fastq NGS1042/raw_fastq/NGS1042_R1.fastq.gz NGS1042/raw_fastq/NGS1042_R2.fastq.gz 2> NGS1042/raw_fastq/NGS1042_fastqc.log
+        
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+[Thu Jan 28 19:50:51 2021]
+Finished job 61.
+25 of 164 steps (15%) done
+Select jobs to execute...
+
+[Thu Jan 28 19:50:51 2021]
+rule viral_reference_bwa_build:
+    input: /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta
+    output: NGS1000/core/viral_reference.bwt
+    log: NGS1000/core/NGS1000_viral_reference_bwa-build.log
+    jobid: 73
+    benchmark: NGS1000/benchmarks/NGS1000_reference_bwa_build.benchmark.tsv
+    wildcards: sn=NGS1000
+
+bwa index -p NGS1000/core/viral_reference /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta >NGS1000/core/NGS1000_viral_reference_bwa-build.log 2>&1
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 19:50:55 2021]
+Finished job 73.
+26 of 164 steps (16%) done
+Select jobs to execute...
+
+[Thu Jan 28 19:50:55 2021]
+rule viral_reference_bwa_build:
+    input: /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta
+    output: NGS1041/core/viral_reference.bwt
+    log: NGS1041/core/NGS1041_viral_reference_bwa-build.log
+    jobid: 88
+    benchmark: NGS1041/benchmarks/NGS1041_reference_bwa_build.benchmark.tsv
+    wildcards: sn=NGS1041
+
+bwa index -p NGS1041/core/viral_reference /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta >NGS1041/core/NGS1041_viral_reference_bwa-build.log 2>&1
+[Thu Jan 28 19:50:57 2021]
+Finished job 55.
+27 of 164 steps (16%) done
+Select jobs to execute...
+
+[Thu Jan 28 19:50:57 2021]
+rule run_raw_fastqc:
+    input: NGS1045/raw_fastq/NGS1045_R1.fastq.gz, NGS1045/raw_fastq/NGS1045_R2.fastq.gz
+    output: NGS1045/raw_fastq/NGS1045_R1_fastqc.html, NGS1045/raw_fastq/NGS1045_R2_fastqc.html
+    log: NGS1045/raw_fastq/NGS1045_fastqc.log
+    jobid: 63
+    benchmark: NGS1045/benchmarks/NGS1045_raw_fastqc.benchmark.tsv
+    wildcards: sn=NGS1045
+
+
+        fastqc -o NGS1045/raw_fastq NGS1045/raw_fastq/NGS1045_R1.fastq.gz NGS1045/raw_fastq/NGS1045_R2.fastq.gz 2> NGS1045/raw_fastq/NGS1045_fastqc.log
+        
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 19:50:58 2021]
+Finished job 88.
+28 of 164 steps (17%) done
+Select jobs to execute...
+
+[Thu Jan 28 19:50:58 2021]
+rule copy_config_sample_log:
+    input: /home/maria/covid_analysis_pavlos/covid-19-signal/config.yaml, /home/maria/covid_analysis_pavlos/covid-19-signal/tal_table.csv
+    output: config.yaml, tal_table.csv
+    jobid: 164
+
+
+        cp /home/maria/covid_analysis_pavlos/covid-19-signal/config.yaml config.yaml
+        cp /home/maria/covid_analysis_pavlos/covid-19-signal/tal_table.csv tal_table.csv
+        
+[Thu Jan 28 19:50:58 2021]
+Finished job 164.
+29 of 164 steps (18%) done
+Select jobs to execute...
+
+[Thu Jan 28 19:50:58 2021]
+rule viral_reference_bwa_build:
+    input: /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta
+    output: NGS1043/core/viral_reference.bwt
+    log: NGS1043/core/NGS1043_viral_reference_bwa-build.log
+    jobid: 98
+    benchmark: NGS1043/benchmarks/NGS1043_reference_bwa_build.benchmark.tsv
+    wildcards: sn=NGS1043
+
+bwa index -p NGS1043/core/viral_reference /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta >NGS1043/core/NGS1043_viral_reference_bwa-build.log 2>&1
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 19:51:01 2021]
+Finished job 98.
+30 of 164 steps (18%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver.Run Snakemake with --verbose to see the full solver output for debugging the problem.
+[Thu Jan 28 19:51:03 2021]
+Finished job 57.
+31 of 164 steps (19%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver.Run Snakemake with --verbose to see the full solver output for debugging the problem.
+[Thu Jan 28 19:51:04 2021]
+Finished job 56.
+32 of 164 steps (20%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver.Run Snakemake with --verbose to see the full solver output for debugging the problem.
+[Thu Jan 28 19:51:09 2021]
+Finished job 59.
+33 of 164 steps (20%) done
+Select jobs to execute...
+
+[Thu Jan 28 19:51:10 2021]
+rule raw_reads_composite_reference_bwa_map:
+    input: NGS1000/raw_fastq/NGS1000_R1.fastq.gz, NGS1000/raw_fastq/NGS1000_R2.fastq.gz
+    output: NGS1000/host_removal/NGS1000_viral_and_nonmapping_reads.bam
+    log: NGS1000/host_removal/NGS1000_human_read_mapping.log
+    jobid: 22
+    benchmark: NGS1000/benchmarks/NGS1000_composite_reference_bwa_map.benchmark.tsv
+    wildcards: sn=NGS1000
+    threads: 4
+
+(conda info --envs; bwa mem -t 4 /home/maria/covid_analysis_pavlos/covid-19-signal/data/composite_human_viral_reference.fna NGS1000/raw_fastq/NGS1000_R1.fastq.gz NGS1000/raw_fastq/NGS1000_R2.fastq.gz | /home/maria/covid_analysis_pavlos/covid-19-signal/scripts/filter_non_human_reads.py -c MN908947.3 > NGS1000/host_removal/NGS1000_viral_and_nonmapping_reads.bam) 2> NGS1000/host_removal/NGS1000_human_read_mapping.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 19:52:02 2021]
+Finished job 62.
+34 of 164 steps (21%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver.Run Snakemake with --verbose to see the full solver output for debugging the problem.
+[Thu Jan 28 19:52:52 2021]
+Finished job 60.
+35 of 164 steps (21%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver.Run Snakemake with --verbose to see the full solver output for debugging the problem.
+[Thu Jan 28 19:53:11 2021]
+Finished job 63.
+36 of 164 steps (22%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver.Run Snakemake with --verbose to see the full solver output for debugging the problem.
+[Thu Jan 28 19:53:20 2021]
+Finished job 58.
+37 of 164 steps (23%) done
+Select jobs to execute...
+
+[Thu Jan 28 19:53:20 2021]
+rule raw_reads_composite_reference_bwa_map:
+    input: NGS1045/raw_fastq/NGS1045_R1.fastq.gz, NGS1045/raw_fastq/NGS1045_R2.fastq.gz
+    output: NGS1045/host_removal/NGS1045_viral_and_nonmapping_reads.bam
+    log: NGS1045/host_removal/NGS1045_human_read_mapping.log
+    jobid: 36
+    benchmark: NGS1045/benchmarks/NGS1045_composite_reference_bwa_map.benchmark.tsv
+    wildcards: sn=NGS1045
+    threads: 4
+
+(conda info --envs; bwa mem -t 4 /home/maria/covid_analysis_pavlos/covid-19-signal/data/composite_human_viral_reference.fna NGS1045/raw_fastq/NGS1045_R1.fastq.gz NGS1045/raw_fastq/NGS1045_R2.fastq.gz | /home/maria/covid_analysis_pavlos/covid-19-signal/scripts/filter_non_human_reads.py -c MN908947.3 > NGS1045/host_removal/NGS1045_viral_and_nonmapping_reads.bam) 2> NGS1045/host_removal/NGS1045_human_read_mapping.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 19:55:52 2021]
+Finished job 22.
+38 of 164 steps (23%) done
+Select jobs to execute...
+
+[Thu Jan 28 19:55:52 2021]
+rule raw_reads_composite_reference_bwa_map:
+    input: NGS1040/raw_fastq/NGS1040_R1.fastq.gz, NGS1040/raw_fastq/NGS1040_R2.fastq.gz
+    output: NGS1040/host_removal/NGS1040_viral_and_nonmapping_reads.bam
+    log: NGS1040/host_removal/NGS1040_human_read_mapping.log
+    jobid: 26
+    benchmark: NGS1040/benchmarks/NGS1040_composite_reference_bwa_map.benchmark.tsv
+    wildcards: sn=NGS1040
+    threads: 4
+
+(conda info --envs; bwa mem -t 4 /home/maria/covid_analysis_pavlos/covid-19-signal/data/composite_human_viral_reference.fna NGS1040/raw_fastq/NGS1040_R1.fastq.gz NGS1040/raw_fastq/NGS1040_R2.fastq.gz | /home/maria/covid_analysis_pavlos/covid-19-signal/scripts/filter_non_human_reads.py -c MN908947.3 > NGS1040/host_removal/NGS1040_viral_and_nonmapping_reads.bam) 2> NGS1040/host_removal/NGS1040_human_read_mapping.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 20:06:02 2021]
+Finished job 36.
+39 of 164 steps (24%) done
+Select jobs to execute...
+
+[Thu Jan 28 20:06:02 2021]
+rule raw_reads_composite_reference_bwa_map:
+    input: NGS1044/raw_fastq/NGS1044_R1.fastq.gz, NGS1044/raw_fastq/NGS1044_R2.fastq.gz
+    output: NGS1044/host_removal/NGS1044_viral_and_nonmapping_reads.bam
+    log: NGS1044/host_removal/NGS1044_human_read_mapping.log
+    jobid: 34
+    benchmark: NGS1044/benchmarks/NGS1044_composite_reference_bwa_map.benchmark.tsv
+    wildcards: sn=NGS1044
+    threads: 4
+
+(conda info --envs; bwa mem -t 4 /home/maria/covid_analysis_pavlos/covid-19-signal/data/composite_human_viral_reference.fna NGS1044/raw_fastq/NGS1044_R1.fastq.gz NGS1044/raw_fastq/NGS1044_R2.fastq.gz | /home/maria/covid_analysis_pavlos/covid-19-signal/scripts/filter_non_human_reads.py -c MN908947.3 > NGS1044/host_removal/NGS1044_viral_and_nonmapping_reads.bam) 2> NGS1044/host_removal/NGS1044_human_read_mapping.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 20:12:01 2021]
+Finished job 26.
+40 of 164 steps (24%) done
+Select jobs to execute...
+
+[Thu Jan 28 20:12:01 2021]
+rule get_host_removed_reads:
+    input: NGS1045/host_removal/NGS1045_viral_and_nonmapping_reads.bam
+    output: NGS1045/host_removal/NGS1045_R1.fastq.gz, NGS1045/host_removal/NGS1045_R2.fastq.gz, NGS1045/host_removal/NGS1045_singletons.fastq.gz, NGS1045/host_removal/NGS1045_viral_and_nonmapping_reads_filtered_sorted.bam
+    log: NGS1045/host_removal/NGS1045_samtools_fastq.log
+    jobid: 35
+    benchmark: NGS1045/benchmarks/NGS1045_get_host_removed_reads.benchmark.tsv
+    wildcards: sn=NGS1045
+    threads: 2
+
+
+        samtools view -b NGS1045/host_removal/NGS1045_viral_and_nonmapping_reads.bam | samtools sort -n -@2 > NGS1045/host_removal/NGS1045_viral_and_nonmapping_reads_filtered_sorted.bam 2> NGS1045/host_removal/NGS1045_samtools_fastq.log
+        samtools fastq -1 NGS1045/host_removal/NGS1045_R1.fastq.gz -2 NGS1045/host_removal/NGS1045_R2.fastq.gz -s NGS1045/host_removal/NGS1045_singletons.fastq.gz NGS1045/host_removal/NGS1045_viral_and_nonmapping_reads_filtered_sorted.bam 2>> NGS1045/host_removal/NGS1045_samtools_fastq.log 
+        
+
+[Thu Jan 28 20:12:01 2021]
+rule get_host_removed_reads:
+    input: NGS1000/host_removal/NGS1000_viral_and_nonmapping_reads.bam
+    output: NGS1000/host_removal/NGS1000_R1.fastq.gz, NGS1000/host_removal/NGS1000_R2.fastq.gz, NGS1000/host_removal/NGS1000_singletons.fastq.gz, NGS1000/host_removal/NGS1000_viral_and_nonmapping_reads_filtered_sorted.bam
+    log: NGS1000/host_removal/NGS1000_samtools_fastq.log
+    jobid: 21
+    benchmark: NGS1000/benchmarks/NGS1000_get_host_removed_reads.benchmark.tsv
+    wildcards: sn=NGS1000
+    threads: 2
+
+
+        samtools view -b NGS1000/host_removal/NGS1000_viral_and_nonmapping_reads.bam | samtools sort -n -@2 > NGS1000/host_removal/NGS1000_viral_and_nonmapping_reads_filtered_sorted.bam 2> NGS1000/host_removal/NGS1000_samtools_fastq.log
+        samtools fastq -1 NGS1000/host_removal/NGS1000_R1.fastq.gz -2 NGS1000/host_removal/NGS1000_R2.fastq.gz -s NGS1000/host_removal/NGS1000_singletons.fastq.gz NGS1000/host_removal/NGS1000_viral_and_nonmapping_reads_filtered_sorted.bam 2>> NGS1000/host_removal/NGS1000_samtools_fastq.log 
+        
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 20:12:59 2021]
+Finished job 21.
+41 of 164 steps (25%) done
+Select jobs to execute...
+
+[Thu Jan 28 20:12:59 2021]
+rule run_trimgalore:
+    input: NGS1000/host_removal/NGS1000_R1.fastq.gz, NGS1000/host_removal/NGS1000_R2.fastq.gz
+    output: NGS1000/adapter_trimmed/NGS1000_R1_val_1.fq.gz, NGS1000/adapter_trimmed/NGS1000_R2_val_2.fq.gz, NGS1000/adapter_trimmed/NGS1000_R1_val_1_fastqc.html, NGS1000/adapter_trimmed/NGS1000_R2_val_2_fastqc.html
+    log: NGS1000/adapter_trimmed/NGS1000_trim_galore.log
+    jobid: 38
+    benchmark: NGS1000/benchmarks/NGS1000_trimgalore.benchmark.tsv
+    wildcards: sn=NGS1000
+    priority: 2
+    threads: 2
+
+trim_galore --quality 20 --length 20  -o NGS1000/adapter_trimmed --cores 2 --fastqc --paired NGS1000/host_removal/NGS1000_R1.fastq.gz NGS1000/host_removal/NGS1000_R2.fastq.gz 2> NGS1000/adapter_trimmed/NGS1000_trim_galore.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+[Thu Jan 28 20:13:55 2021]
+Finished job 38.
+42 of 164 steps (26%) done
+Select jobs to execute...
+
+[Thu Jan 28 20:13:55 2021]
+rule run_filtering_of_residual_adapters:
+    input: NGS1000/adapter_trimmed/NGS1000_R1_val_1.fq.gz, NGS1000/adapter_trimmed/NGS1000_R2_val_2.fq.gz
+    output: NGS1000/adapter_trimmed/NGS1000_R1_val_1_posttrim_filter.fq.gz, NGS1000/adapter_trimmed/NGS1000_R2_val_2_posttrim_filter.fq.gz
+    jobid: 47
+    wildcards: sn=NGS1000
+    priority: 2
+    threads: 2
+
+
+	python3.6 /home/maria/covid_analysis_pavlos/covid-19-signal/scripts/filter_residual_adapters.py --input_R1 NGS1000/adapter_trimmed/NGS1000_R1_val_1.fq.gz --input_R2 NGS1000/adapter_trimmed/NGS1000_R2_val_2.fq.gz
+	
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 20:17:07 2021]
+Finished job 47.
+43 of 164 steps (26%) done
+Select jobs to execute...
+
+[Thu Jan 28 20:17:07 2021]
+rule get_host_removed_reads:
+    input: NGS1040/host_removal/NGS1040_viral_and_nonmapping_reads.bam
+    output: NGS1040/host_removal/NGS1040_R1.fastq.gz, NGS1040/host_removal/NGS1040_R2.fastq.gz, NGS1040/host_removal/NGS1040_singletons.fastq.gz, NGS1040/host_removal/NGS1040_viral_and_nonmapping_reads_filtered_sorted.bam
+    log: NGS1040/host_removal/NGS1040_samtools_fastq.log
+    jobid: 25
+    benchmark: NGS1040/benchmarks/NGS1040_get_host_removed_reads.benchmark.tsv
+    wildcards: sn=NGS1040
+    threads: 2
+
+
+        samtools view -b NGS1040/host_removal/NGS1040_viral_and_nonmapping_reads.bam | samtools sort -n -@2 > NGS1040/host_removal/NGS1040_viral_and_nonmapping_reads_filtered_sorted.bam 2> NGS1040/host_removal/NGS1040_samtools_fastq.log
+        samtools fastq -1 NGS1040/host_removal/NGS1040_R1.fastq.gz -2 NGS1040/host_removal/NGS1040_R2.fastq.gz -s NGS1040/host_removal/NGS1040_singletons.fastq.gz NGS1040/host_removal/NGS1040_viral_and_nonmapping_reads_filtered_sorted.bam 2>> NGS1040/host_removal/NGS1040_samtools_fastq.log 
+        
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 20:18:56 2021]
+Finished job 34.
+44 of 164 steps (27%) done
+Select jobs to execute...
+
+[Thu Jan 28 20:18:56 2021]
+rule viral_reference_bwa_map:
+    input: NGS1000/adapter_trimmed/NGS1000_R1_val_1_posttrim_filter.fq.gz, NGS1000/adapter_trimmed/NGS1000_R2_val_2_posttrim_filter.fq.gz, NGS1000/core/viral_reference.bwt
+    output: NGS1000/core/NGS1000_viral_reference.bam
+    log: NGS1000/core/NGS1000_viral_reference_bwa.log
+    jobid: 72
+    benchmark: NGS1000/benchmarks/NGS1000_viral_reference_bwa_map.benchmark.tsv
+    wildcards: sn=NGS1000
+    threads: 2
+
+(bwa mem -t 2 NGS1000/core/viral_reference NGS1000/adapter_trimmed/NGS1000_R1_val_1_posttrim_filter.fq.gz NGS1000/adapter_trimmed/NGS1000_R2_val_2_posttrim_filter.fq.gz | samtools view -bS | samtools sort -@2 -o NGS1000/core/NGS1000_viral_reference.bam) 2> NGS1000/core/NGS1000_viral_reference_bwa.log
+
+[Thu Jan 28 20:18:56 2021]
+rule get_host_removed_reads:
+    input: NGS1044/host_removal/NGS1044_viral_and_nonmapping_reads.bam
+    output: NGS1044/host_removal/NGS1044_R1.fastq.gz, NGS1044/host_removal/NGS1044_R2.fastq.gz, NGS1044/host_removal/NGS1044_singletons.fastq.gz, NGS1044/host_removal/NGS1044_viral_and_nonmapping_reads_filtered_sorted.bam
+    log: NGS1044/host_removal/NGS1044_samtools_fastq.log
+    jobid: 33
+    benchmark: NGS1044/benchmarks/NGS1044_get_host_removed_reads.benchmark.tsv
+    wildcards: sn=NGS1044
+    threads: 2
+
+
+        samtools view -b NGS1044/host_removal/NGS1044_viral_and_nonmapping_reads.bam | samtools sort -n -@2 > NGS1044/host_removal/NGS1044_viral_and_nonmapping_reads_filtered_sorted.bam 2> NGS1044/host_removal/NGS1044_samtools_fastq.log
+        samtools fastq -1 NGS1044/host_removal/NGS1044_R1.fastq.gz -2 NGS1044/host_removal/NGS1044_R2.fastq.gz -s NGS1044/host_removal/NGS1044_singletons.fastq.gz NGS1044/host_removal/NGS1044_viral_and_nonmapping_reads_filtered_sorted.bam 2>> NGS1044/host_removal/NGS1044_samtools_fastq.log 
+        
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 20:19:37 2021]
+Finished job 72.
+45 of 164 steps (27%) done
+Select jobs to execute...
+
+[Thu Jan 28 20:19:37 2021]
+rule run_kraken2:
+    input: NGS1000/adapter_trimmed/NGS1000_R1_val_1_posttrim_filter.fq.gz, NGS1000/adapter_trimmed/NGS1000_R2_val_2_posttrim_filter.fq.gz
+    output: NGS1000/kraken2/NGS1000_kraken2.out
+    log: NGS1000/kraken2/NGS1000_kraken2.log
+    jobid: 147
+    benchmark: NGS1000/benchmarks/NGS1000_run_kraken2.benchmark.tsv
+    wildcards: sn=NGS1000
+
+cd NGS1000/kraken2 && kraken2 --db /home/maria/covid_analysis_pavlos/covid-19-signal/data/Kraken2/db --threads 1 --quick --unclassified-out "NGS1000_kraken2_unclassified_reads#" --classified-out "NGS1000_kraken2_classified_reads#" --output NGS1000_kraken2.out --paired --gzip-compressed ../../NGS1000/adapter_trimmed/NGS1000_R1_val_1_posttrim_filter.fq.gz ../../NGS1000/adapter_trimmed/NGS1000_R2_val_2_posttrim_filter.fq.gz --report NGS1000_kraken2.report 2>../../NGS1000/kraken2/NGS1000_kraken2.log
+
+[Thu Jan 28 20:19:37 2021]
+rule run_bed_primer_trim:
+    input: NGS1000/core/NGS1000_viral_reference.bam
+    output: NGS1000/core/NGS1000_viral_reference.mapping.primertrimmed.sorted.bam, NGS1000/core/NGS1000_viral_reference.mapping.primertrimmed.bam, NGS1000/core/NGS1000_viral_reference.mapping.bam
+    log: NGS1000/core/NGS1000_ivar_trim.log
+    jobid: 71
+    benchmark: NGS1000/benchmarks/NGS1000_bed_primer_trim.benchmark.tsv
+    wildcards: sn=NGS1000
+
+samtools view -F4 -o NGS1000/core/NGS1000_viral_reference.mapping.bam NGS1000/core/NGS1000_viral_reference.bam; samtools index NGS1000/core/NGS1000_viral_reference.mapping.bam; ivar trim -e -i NGS1000/core/NGS1000_viral_reference.mapping.bam -b /home/maria/covid_analysis_pavlos/covid-19-signal/resources/SARSCoV2.paragon.bed -m 20 -q 20 -p NGS1000/core/NGS1000_viral_reference.mapping.primertrimmed 2> NGS1000/core/NGS1000_ivar_trim.log; samtools sort -o NGS1000/core/NGS1000_viral_reference.mapping.primertrimmed.sorted.bam NGS1000/core/NGS1000_viral_reference.mapping.primertrimmed.bam
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+Activating conda environment: /home/maria/SNAKE_COVID/conda/5258de7f
+[Thu Jan 28 20:19:58 2021]
+Finished job 147.
+46 of 164 steps (28%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver.Run Snakemake with --verbose to see the full solver output for debugging the problem.
+[Thu Jan 28 20:22:06 2021]
+Finished job 71.
+47 of 164 steps (29%) done
+Select jobs to execute...
+
+[Thu Jan 28 20:22:06 2021]
+rule get_mapping_reads:
+    input: NGS1000/core/NGS1000_viral_reference.mapping.primertrimmed.bam
+    output: NGS1000/mapped_clean_reads/NGS1000_R1.fastq.gz, NGS1000/mapped_clean_reads/NGS1000_R2.fastq.gz, NGS1000/mapped_clean_reads/NGS1000_singletons.fastq.gz, NGS1000/mapped_clean_reads/NGS1000_sorted_clean.bam
+    log: NGS1000/mapped_clean_reads/NGS1000_samtools_fastq.log
+    jobid: 70
+    benchmark: NGS1000/benchmarks/NGS1000_get_mapping_reads.benchmark.tsv
+    wildcards: sn=NGS1000
+    priority: 2
+
+
+        samtools sort -n NGS1000/core/NGS1000_viral_reference.mapping.primertrimmed.bam -o NGS1000/mapped_clean_reads/NGS1000_sorted_clean.bam 2> NGS1000/mapped_clean_reads/NGS1000_samtools_fastq.log
+        samtools fastq -1 NGS1000/mapped_clean_reads/NGS1000_R1.fastq.gz -2 NGS1000/mapped_clean_reads/NGS1000_R2.fastq.gz -s NGS1000/mapped_clean_reads/NGS1000_singletons.fastq.gz NGS1000/mapped_clean_reads/NGS1000_sorted_clean.bam 2>> NGS1000/mapped_clean_reads/NGS1000_samtools_fastq.log 
+        
+
+[Thu Jan 28 20:22:06 2021]
+rule run_ivar_consensus:
+    input: NGS1000/core/NGS1000_viral_reference.mapping.primertrimmed.sorted.bam
+    output: NGS1000/core/NGS1000.consensus.fa
+    log: NGS1000/core/NGS1000_ivar_consensus.log
+    jobid: 110
+    benchmark: NGS1000/benchmarks/NGS1000_ivar_consensus.benchmark.tsv
+    wildcards: sn=NGS1000
+
+(samtools mpileup -aa -A -d 100000 -Q0 NGS1000/core/NGS1000_viral_reference.mapping.primertrimmed.sorted.bam | ivar consensus -t 0.75 -m 10 -n N -p NGS1000/core/NGS1000.consensus) 2>NGS1000/core/NGS1000_ivar_consensus.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+Activating conda environment: /home/maria/SNAKE_COVID/conda/5258de7f
+[Thu Jan 28 20:22:19 2021]
+Finished job 110.
+48 of 164 steps (29%) done
+Select jobs to execute...
+
+[Thu Jan 28 20:22:19 2021]
+rule run_quast:
+    input: NGS1000/core/NGS1000.consensus.fa
+    output: NGS1000/quast/NGS1000_quast_report.html
+    log: NGS1000/quast/NGS1000_quast.log
+    jobid: 156
+    benchmark: NGS1000/benchmarks/NGS1000_run_quast.benchmark.tsv
+    wildcards: sn=NGS1000
+
+quast NGS1000/core/NGS1000.consensus.fa -r /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta -g /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.gff3 --output-dir NGS1000/quast --threads 1 >NGS1000/quast/NGS1000_quast.log && for f in NGS1000/quast/report.*; do mv $f ${f/report/NGS1000_quast_report}; done
+Activating conda environment: /home/maria/SNAKE_COVID/conda/2d0610a0
+[Thu Jan 28 20:22:24 2021]
+Finished job 156.
+49 of 164 steps (30%) done
+Select jobs to execute...
+
+[Thu Jan 28 20:22:24 2021]
+rule coverage_depth:
+    input: NGS1000/core/NGS1000_viral_reference.mapping.primertrimmed.sorted.bam
+    output: NGS1000/coverage/NGS1000_depth.txt
+    jobid: 129
+    benchmark: NGS1000/benchmarks/NGS1000_coverage_depth.benchmark.tsv
+    wildcards: sn=NGS1000
+
+bedtools genomecov -d -ibam NGS1000/core/NGS1000_viral_reference.mapping.primertrimmed.sorted.bam >NGS1000/coverage/NGS1000_depth.txt
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 20:22:33 2021]
+Finished job 129.
+50 of 164 steps (30%) done
+Select jobs to execute...
+
+[Thu Jan 28 20:22:33 2021]
+rule generate_coverage_plot:
+    input: NGS1000/coverage/NGS1000_depth.txt
+    output: NGS1000/coverage/NGS1000_coverage_plot.png
+    jobid: 138
+    wildcards: sn=NGS1000
+
+/home/maria/covid_analysis_pavlos/covid-19-signal/scripts/generate_coverage_plot.py NGS1000/coverage/NGS1000_depth.txt NGS1000/coverage/NGS1000_coverage_plot.png
+Activating conda environment: /home/maria/SNAKE_COVID/conda/4bc6b9de
+[Thu Jan 28 20:22:37 2021]
+Finished job 70.
+51 of 164 steps (31%) done
+Select jobs to execute...
+
+[Thu Jan 28 20:22:37 2021]
+rule run_fastqc_on_mapped_reads:
+    input: NGS1000/mapped_clean_reads/NGS1000_R1.fastq.gz, NGS1000/mapped_clean_reads/NGS1000_R2.fastq.gz
+    output: NGS1000/mapped_clean_reads/NGS1000_R1_fastqc.html, NGS1000/mapped_clean_reads/NGS1000_R2_fastqc.html
+    log: NGS1000/mapped_clean_reads/NGS1000_fastqc.log
+    jobid: 69
+    benchmark: NGS1000/benchmarks/NGS1000_clean_fastqc.benchmark.tsv
+    wildcards: sn=NGS1000
+
+
+        fastqc -o NGS1000/mapped_clean_reads NGS1000/mapped_clean_reads/NGS1000_R1.fastq.gz NGS1000/mapped_clean_reads/NGS1000_R2.fastq.gz 2> NGS1000/mapped_clean_reads/NGS1000_fastqc.log
+        
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+[Thu Jan 28 20:22:42 2021]
+Finished job 138.
+52 of 164 steps (32%) done
+Select jobs to execute...
+
+[Thu Jan 28 20:22:42 2021]
+rule run_ivar_variants:
+    input: /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta, /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta.fai, NGS1000/core/NGS1000_viral_reference.mapping.primertrimmed.sorted.bam, /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.gff3
+    output: NGS1000/core/NGS1000_ivar_variants.tsv
+    log: NGS1000/core/NGS1000_ivar_variants.log
+    jobid: 120
+    benchmark: NGS1000/benchmarks/NGS1000_ivar_variants.benchmark.tsv
+    wildcards: sn=NGS1000
+
+(samtools mpileup -aa -A -d 0 --reference /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta -B -Q 0 NGS1000/core/NGS1000_viral_reference.mapping.primertrimmed.sorted.bam | ivar variants -r /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta -m 10 -p NGS1000/core/NGS1000_ivar_variants -q 20 -t 0.25 -g /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.gff3) 2> NGS1000/core/NGS1000_ivar_variants.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/5258de7f
+[Thu Jan 28 20:22:54 2021]
+Finished job 69.
+53 of 164 steps (32%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver.Run Snakemake with --verbose to see the full solver output for debugging the problem.
+[Thu Jan 28 20:23:03 2021]
+Finished job 120.
+54 of 164 steps (33%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver.Run Snakemake with --verbose to see the full solver output for debugging the problem.
+[Thu Jan 28 20:23:18 2021]
+Finished job 35.
+55 of 164 steps (34%) done
+Select jobs to execute...
+
+[Thu Jan 28 20:23:18 2021]
+rule run_trimgalore:
+    input: NGS1045/host_removal/NGS1045_R1.fastq.gz, NGS1045/host_removal/NGS1045_R2.fastq.gz
+    output: NGS1045/adapter_trimmed/NGS1045_R1_val_1.fq.gz, NGS1045/adapter_trimmed/NGS1045_R2_val_2.fq.gz, NGS1045/adapter_trimmed/NGS1045_R1_val_1_fastqc.html, NGS1045/adapter_trimmed/NGS1045_R2_val_2_fastqc.html
+    log: NGS1045/adapter_trimmed/NGS1045_trim_galore.log
+    jobid: 45
+    benchmark: NGS1045/benchmarks/NGS1045_trimgalore.benchmark.tsv
+    wildcards: sn=NGS1045
+    priority: 2
+    threads: 2
+
+trim_galore --quality 20 --length 20  -o NGS1045/adapter_trimmed --cores 2 --fastqc --paired NGS1045/host_removal/NGS1045_R1.fastq.gz NGS1045/host_removal/NGS1045_R2.fastq.gz 2> NGS1045/adapter_trimmed/NGS1045_trim_galore.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+[Thu Jan 28 20:25:19 2021]
+Finished job 33.
+56 of 164 steps (34%) done
+Select jobs to execute...
+
+[Thu Jan 28 20:25:19 2021]
+rule run_trimgalore:
+    input: NGS1044/host_removal/NGS1044_R1.fastq.gz, NGS1044/host_removal/NGS1044_R2.fastq.gz
+    output: NGS1044/adapter_trimmed/NGS1044_R1_val_1.fq.gz, NGS1044/adapter_trimmed/NGS1044_R2_val_2.fq.gz, NGS1044/adapter_trimmed/NGS1044_R1_val_1_fastqc.html, NGS1044/adapter_trimmed/NGS1044_R2_val_2_fastqc.html
+    log: NGS1044/adapter_trimmed/NGS1044_trim_galore.log
+    jobid: 44
+    benchmark: NGS1044/benchmarks/NGS1044_trimgalore.benchmark.tsv
+    wildcards: sn=NGS1044
+    priority: 2
+    threads: 2
+
+trim_galore --quality 20 --length 20  -o NGS1044/adapter_trimmed --cores 2 --fastqc --paired NGS1044/host_removal/NGS1044_R1.fastq.gz NGS1044/host_removal/NGS1044_R2.fastq.gz 2> NGS1044/adapter_trimmed/NGS1044_trim_galore.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+[Thu Jan 28 20:30:39 2021]
+Finished job 44.
+57 of 164 steps (35%) done
+Select jobs to execute...
+
+[Thu Jan 28 20:30:39 2021]
+rule run_filtering_of_residual_adapters:
+    input: NGS1044/adapter_trimmed/NGS1044_R1_val_1.fq.gz, NGS1044/adapter_trimmed/NGS1044_R2_val_2.fq.gz
+    output: NGS1044/adapter_trimmed/NGS1044_R1_val_1_posttrim_filter.fq.gz, NGS1044/adapter_trimmed/NGS1044_R2_val_2_posttrim_filter.fq.gz
+    jobid: 53
+    wildcards: sn=NGS1044
+    priority: 2
+    threads: 2
+
+
+	python3.6 /home/maria/covid_analysis_pavlos/covid-19-signal/scripts/filter_residual_adapters.py --input_R1 NGS1044/adapter_trimmed/NGS1044_R1_val_1.fq.gz --input_R2 NGS1044/adapter_trimmed/NGS1044_R2_val_2.fq.gz
+	
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 20:31:03 2021]
+Finished job 25.
+58 of 164 steps (35%) done
+Select jobs to execute...
+
+[Thu Jan 28 20:31:03 2021]
+rule run_trimgalore:
+    input: NGS1040/host_removal/NGS1040_R1.fastq.gz, NGS1040/host_removal/NGS1040_R2.fastq.gz
+    output: NGS1040/adapter_trimmed/NGS1040_R1_val_1.fq.gz, NGS1040/adapter_trimmed/NGS1040_R2_val_2.fq.gz, NGS1040/adapter_trimmed/NGS1040_R1_val_1_fastqc.html, NGS1040/adapter_trimmed/NGS1040_R2_val_2_fastqc.html
+    log: NGS1040/adapter_trimmed/NGS1040_trim_galore.log
+    jobid: 40
+    benchmark: NGS1040/benchmarks/NGS1040_trimgalore.benchmark.tsv
+    wildcards: sn=NGS1040
+    priority: 2
+    threads: 2
+
+trim_galore --quality 20 --length 20  -o NGS1040/adapter_trimmed --cores 2 --fastqc --paired NGS1040/host_removal/NGS1040_R1.fastq.gz NGS1040/host_removal/NGS1040_R2.fastq.gz 2> NGS1040/adapter_trimmed/NGS1040_trim_galore.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+[Thu Jan 28 20:32:44 2021]
+Finished job 45.
+59 of 164 steps (36%) done
+Select jobs to execute...
+
+[Thu Jan 28 20:32:44 2021]
+rule run_filtering_of_residual_adapters:
+    input: NGS1045/adapter_trimmed/NGS1045_R1_val_1.fq.gz, NGS1045/adapter_trimmed/NGS1045_R2_val_2.fq.gz
+    output: NGS1045/adapter_trimmed/NGS1045_R1_val_1_posttrim_filter.fq.gz, NGS1045/adapter_trimmed/NGS1045_R2_val_2_posttrim_filter.fq.gz
+    jobid: 54
+    wildcards: sn=NGS1045
+    priority: 2
+    threads: 2
+
+
+	python3.6 /home/maria/covid_analysis_pavlos/covid-19-signal/scripts/filter_residual_adapters.py --input_R1 NGS1045/adapter_trimmed/NGS1045_R1_val_1.fq.gz --input_R2 NGS1045/adapter_trimmed/NGS1045_R2_val_2.fq.gz
+	
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 20:40:49 2021]
+Finished job 40.
+60 of 164 steps (37%) done
+Select jobs to execute...
+
+[Thu Jan 28 20:40:49 2021]
+rule run_filtering_of_residual_adapters:
+    input: NGS1040/adapter_trimmed/NGS1040_R1_val_1.fq.gz, NGS1040/adapter_trimmed/NGS1040_R2_val_2.fq.gz
+    output: NGS1040/adapter_trimmed/NGS1040_R1_val_1_posttrim_filter.fq.gz, NGS1040/adapter_trimmed/NGS1040_R2_val_2_posttrim_filter.fq.gz
+    jobid: 49
+    wildcards: sn=NGS1040
+    priority: 2
+    threads: 2
+
+
+	python3.6 /home/maria/covid_analysis_pavlos/covid-19-signal/scripts/filter_residual_adapters.py --input_R1 NGS1040/adapter_trimmed/NGS1040_R1_val_1.fq.gz --input_R2 NGS1040/adapter_trimmed/NGS1040_R2_val_2.fq.gz
+	
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 20:51:23 2021]
+Finished job 53.
+61 of 164 steps (37%) done
+Select jobs to execute...
+
+[Thu Jan 28 20:51:23 2021]
+rule raw_reads_composite_reference_bwa_map:
+    input: NGS1001/raw_fastq/NGS1001_R1.fastq.gz, NGS1001/raw_fastq/NGS1001_R2.fastq.gz
+    output: NGS1001/host_removal/NGS1001_viral_and_nonmapping_reads.bam
+    log: NGS1001/host_removal/NGS1001_human_read_mapping.log
+    jobid: 24
+    benchmark: NGS1001/benchmarks/NGS1001_composite_reference_bwa_map.benchmark.tsv
+    wildcards: sn=NGS1001
+    threads: 4
+
+(conda info --envs; bwa mem -t 4 /home/maria/covid_analysis_pavlos/covid-19-signal/data/composite_human_viral_reference.fna NGS1001/raw_fastq/NGS1001_R1.fastq.gz NGS1001/raw_fastq/NGS1001_R2.fastq.gz | /home/maria/covid_analysis_pavlos/covid-19-signal/scripts/filter_non_human_reads.py -c MN908947.3 > NGS1001/host_removal/NGS1001_viral_and_nonmapping_reads.bam) 2> NGS1001/host_removal/NGS1001_human_read_mapping.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 20:54:32 2021]
+Finished job 24.
+62 of 164 steps (38%) done
+Select jobs to execute...
+
+[Thu Jan 28 20:54:32 2021]
+rule raw_reads_composite_reference_bwa_map:
+    input: NGS1041/raw_fastq/NGS1041_R1.fastq.gz, NGS1041/raw_fastq/NGS1041_R2.fastq.gz
+    output: NGS1041/host_removal/NGS1041_viral_and_nonmapping_reads.bam
+    log: NGS1041/host_removal/NGS1041_human_read_mapping.log
+    jobid: 28
+    benchmark: NGS1041/benchmarks/NGS1041_composite_reference_bwa_map.benchmark.tsv
+    wildcards: sn=NGS1041
+    threads: 4
+
+(conda info --envs; bwa mem -t 4 /home/maria/covid_analysis_pavlos/covid-19-signal/data/composite_human_viral_reference.fna NGS1041/raw_fastq/NGS1041_R1.fastq.gz NGS1041/raw_fastq/NGS1041_R2.fastq.gz | /home/maria/covid_analysis_pavlos/covid-19-signal/scripts/filter_non_human_reads.py -c MN908947.3 > NGS1041/host_removal/NGS1041_viral_and_nonmapping_reads.bam) 2> NGS1041/host_removal/NGS1041_human_read_mapping.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 21:04:59 2021]
+Finished job 28.
+63 of 164 steps (38%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:04:59 2021]
+rule viral_reference_bwa_map:
+    input: NGS1044/adapter_trimmed/NGS1044_R1_val_1_posttrim_filter.fq.gz, NGS1044/adapter_trimmed/NGS1044_R2_val_2_posttrim_filter.fq.gz, NGS1044/core/viral_reference.bwt
+    output: NGS1044/core/NGS1044_viral_reference.bam
+    log: NGS1044/core/NGS1044_viral_reference_bwa.log
+    jobid: 102
+    benchmark: NGS1044/benchmarks/NGS1044_viral_reference_bwa_map.benchmark.tsv
+    wildcards: sn=NGS1044
+    threads: 2
+
+(bwa mem -t 2 NGS1044/core/viral_reference NGS1044/adapter_trimmed/NGS1044_R1_val_1_posttrim_filter.fq.gz NGS1044/adapter_trimmed/NGS1044_R2_val_2_posttrim_filter.fq.gz | samtools view -bS | samtools sort -@2 -o NGS1044/core/NGS1044_viral_reference.bam) 2> NGS1044/core/NGS1044_viral_reference_bwa.log
+
+[Thu Jan 28 21:04:59 2021]
+rule get_host_removed_reads:
+    input: NGS1001/host_removal/NGS1001_viral_and_nonmapping_reads.bam
+    output: NGS1001/host_removal/NGS1001_R1.fastq.gz, NGS1001/host_removal/NGS1001_R2.fastq.gz, NGS1001/host_removal/NGS1001_singletons.fastq.gz, NGS1001/host_removal/NGS1001_viral_and_nonmapping_reads_filtered_sorted.bam
+    log: NGS1001/host_removal/NGS1001_samtools_fastq.log
+    jobid: 23
+    benchmark: NGS1001/benchmarks/NGS1001_get_host_removed_reads.benchmark.tsv
+    wildcards: sn=NGS1001
+    threads: 2
+
+
+        samtools view -b NGS1001/host_removal/NGS1001_viral_and_nonmapping_reads.bam | samtools sort -n -@2 > NGS1001/host_removal/NGS1001_viral_and_nonmapping_reads_filtered_sorted.bam 2> NGS1001/host_removal/NGS1001_samtools_fastq.log
+        samtools fastq -1 NGS1001/host_removal/NGS1001_R1.fastq.gz -2 NGS1001/host_removal/NGS1001_R2.fastq.gz -s NGS1001/host_removal/NGS1001_singletons.fastq.gz NGS1001/host_removal/NGS1001_viral_and_nonmapping_reads_filtered_sorted.bam 2>> NGS1001/host_removal/NGS1001_samtools_fastq.log 
+        
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 21:05:51 2021]
+Finished job 23.
+64 of 164 steps (39%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:05:51 2021]
+rule run_trimgalore:
+    input: NGS1001/host_removal/NGS1001_R1.fastq.gz, NGS1001/host_removal/NGS1001_R2.fastq.gz
+    output: NGS1001/adapter_trimmed/NGS1001_R1_val_1.fq.gz, NGS1001/adapter_trimmed/NGS1001_R2_val_2.fq.gz, NGS1001/adapter_trimmed/NGS1001_R1_val_1_fastqc.html, NGS1001/adapter_trimmed/NGS1001_R2_val_2_fastqc.html
+    log: NGS1001/adapter_trimmed/NGS1001_trim_galore.log
+    jobid: 39
+    benchmark: NGS1001/benchmarks/NGS1001_trimgalore.benchmark.tsv
+    wildcards: sn=NGS1001
+    priority: 2
+    threads: 2
+
+trim_galore --quality 20 --length 20  -o NGS1001/adapter_trimmed --cores 2 --fastqc --paired NGS1001/host_removal/NGS1001_R1.fastq.gz NGS1001/host_removal/NGS1001_R2.fastq.gz 2> NGS1001/adapter_trimmed/NGS1001_trim_galore.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+[Thu Jan 28 21:06:43 2021]
+Finished job 39.
+65 of 164 steps (40%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:06:43 2021]
+rule run_filtering_of_residual_adapters:
+    input: NGS1001/adapter_trimmed/NGS1001_R1_val_1.fq.gz, NGS1001/adapter_trimmed/NGS1001_R2_val_2.fq.gz
+    output: NGS1001/adapter_trimmed/NGS1001_R1_val_1_posttrim_filter.fq.gz, NGS1001/adapter_trimmed/NGS1001_R2_val_2_posttrim_filter.fq.gz
+    jobid: 48
+    wildcards: sn=NGS1001
+    priority: 2
+    threads: 2
+
+
+	python3.6 /home/maria/covid_analysis_pavlos/covid-19-signal/scripts/filter_residual_adapters.py --input_R1 NGS1001/adapter_trimmed/NGS1001_R1_val_1.fq.gz --input_R2 NGS1001/adapter_trimmed/NGS1001_R2_val_2.fq.gz
+	
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 21:09:11 2021]
+Finished job 102.
+66 of 164 steps (40%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:09:11 2021]
+rule get_host_removed_reads:
+    input: NGS1041/host_removal/NGS1041_viral_and_nonmapping_reads.bam
+    output: NGS1041/host_removal/NGS1041_R1.fastq.gz, NGS1041/host_removal/NGS1041_R2.fastq.gz, NGS1041/host_removal/NGS1041_singletons.fastq.gz, NGS1041/host_removal/NGS1041_viral_and_nonmapping_reads_filtered_sorted.bam
+    log: NGS1041/host_removal/NGS1041_samtools_fastq.log
+    jobid: 27
+    benchmark: NGS1041/benchmarks/NGS1041_get_host_removed_reads.benchmark.tsv
+    wildcards: sn=NGS1041
+    threads: 2
+
+
+        samtools view -b NGS1041/host_removal/NGS1041_viral_and_nonmapping_reads.bam | samtools sort -n -@2 > NGS1041/host_removal/NGS1041_viral_and_nonmapping_reads_filtered_sorted.bam 2> NGS1041/host_removal/NGS1041_samtools_fastq.log
+        samtools fastq -1 NGS1041/host_removal/NGS1041_R1.fastq.gz -2 NGS1041/host_removal/NGS1041_R2.fastq.gz -s NGS1041/host_removal/NGS1041_singletons.fastq.gz NGS1041/host_removal/NGS1041_viral_and_nonmapping_reads_filtered_sorted.bam 2>> NGS1041/host_removal/NGS1041_samtools_fastq.log 
+        
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 21:09:45 2021]
+Finished job 48.
+67 of 164 steps (41%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:09:45 2021]
+rule run_kraken2:
+    input: NGS1001/adapter_trimmed/NGS1001_R1_val_1_posttrim_filter.fq.gz, NGS1001/adapter_trimmed/NGS1001_R2_val_2_posttrim_filter.fq.gz
+    output: NGS1001/kraken2/NGS1001_kraken2.out
+    log: NGS1001/kraken2/NGS1001_kraken2.log
+    jobid: 148
+    benchmark: NGS1001/benchmarks/NGS1001_run_kraken2.benchmark.tsv
+    wildcards: sn=NGS1001
+
+cd NGS1001/kraken2 && kraken2 --db /home/maria/covid_analysis_pavlos/covid-19-signal/data/Kraken2/db --threads 1 --quick --unclassified-out "NGS1001_kraken2_unclassified_reads#" --classified-out "NGS1001_kraken2_classified_reads#" --output NGS1001_kraken2.out --paired --gzip-compressed ../../NGS1001/adapter_trimmed/NGS1001_R1_val_1_posttrim_filter.fq.gz ../../NGS1001/adapter_trimmed/NGS1001_R2_val_2_posttrim_filter.fq.gz --report NGS1001_kraken2.report 2>../../NGS1001/kraken2/NGS1001_kraken2.log
+
+[Thu Jan 28 21:09:45 2021]
+rule run_kraken2:
+    input: NGS1044/adapter_trimmed/NGS1044_R1_val_1_posttrim_filter.fq.gz, NGS1044/adapter_trimmed/NGS1044_R2_val_2_posttrim_filter.fq.gz
+    output: NGS1044/kraken2/NGS1044_kraken2.out
+    log: NGS1044/kraken2/NGS1044_kraken2.log
+    jobid: 153
+    benchmark: NGS1044/benchmarks/NGS1044_run_kraken2.benchmark.tsv
+    wildcards: sn=NGS1044
+
+cd NGS1044/kraken2 && kraken2 --db /home/maria/covid_analysis_pavlos/covid-19-signal/data/Kraken2/db --threads 1 --quick --unclassified-out "NGS1044_kraken2_unclassified_reads#" --classified-out "NGS1044_kraken2_classified_reads#" --output NGS1044_kraken2.out --paired --gzip-compressed ../../NGS1044/adapter_trimmed/NGS1044_R1_val_1_posttrim_filter.fq.gz ../../NGS1044/adapter_trimmed/NGS1044_R2_val_2_posttrim_filter.fq.gz --report NGS1044_kraken2.report 2>../../NGS1044/kraken2/NGS1044_kraken2.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+[Thu Jan 28 21:10:06 2021]
+Finished job 148.
+68 of 164 steps (41%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:10:06 2021]
+rule run_bed_primer_trim:
+    input: NGS1044/core/NGS1044_viral_reference.bam
+    output: NGS1044/core/NGS1044_viral_reference.mapping.primertrimmed.sorted.bam, NGS1044/core/NGS1044_viral_reference.mapping.primertrimmed.bam, NGS1044/core/NGS1044_viral_reference.mapping.bam
+    log: NGS1044/core/NGS1044_ivar_trim.log
+    jobid: 101
+    benchmark: NGS1044/benchmarks/NGS1044_bed_primer_trim.benchmark.tsv
+    wildcards: sn=NGS1044
+
+samtools view -F4 -o NGS1044/core/NGS1044_viral_reference.mapping.bam NGS1044/core/NGS1044_viral_reference.bam; samtools index NGS1044/core/NGS1044_viral_reference.mapping.bam; ivar trim -e -i NGS1044/core/NGS1044_viral_reference.mapping.bam -b /home/maria/covid_analysis_pavlos/covid-19-signal/resources/SARSCoV2.paragon.bed -m 20 -q 20 -p NGS1044/core/NGS1044_viral_reference.mapping.primertrimmed 2> NGS1044/core/NGS1044_ivar_trim.log; samtools sort -o NGS1044/core/NGS1044_viral_reference.mapping.primertrimmed.sorted.bam NGS1044/core/NGS1044_viral_reference.mapping.primertrimmed.bam
+Activating conda environment: /home/maria/SNAKE_COVID/conda/5258de7f
+[Thu Jan 28 21:11:07 2021]
+Finished job 27.
+69 of 164 steps (42%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:11:07 2021]
+rule run_trimgalore:
+    input: NGS1041/host_removal/NGS1041_R1.fastq.gz, NGS1041/host_removal/NGS1041_R2.fastq.gz
+    output: NGS1041/adapter_trimmed/NGS1041_R1_val_1.fq.gz, NGS1041/adapter_trimmed/NGS1041_R2_val_2.fq.gz, NGS1041/adapter_trimmed/NGS1041_R1_val_1_fastqc.html, NGS1041/adapter_trimmed/NGS1041_R2_val_2_fastqc.html
+    log: NGS1041/adapter_trimmed/NGS1041_trim_galore.log
+    jobid: 41
+    benchmark: NGS1041/benchmarks/NGS1041_trimgalore.benchmark.tsv
+    wildcards: sn=NGS1041
+    priority: 2
+    threads: 2
+
+trim_galore --quality 20 --length 20  -o NGS1041/adapter_trimmed --cores 2 --fastqc --paired NGS1041/host_removal/NGS1041_R1.fastq.gz NGS1041/host_removal/NGS1041_R2.fastq.gz 2> NGS1041/adapter_trimmed/NGS1041_trim_galore.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+[Thu Jan 28 21:11:52 2021]
+Finished job 153.
+70 of 164 steps (43%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver.Run Snakemake with --verbose to see the full solver output for debugging the problem.
+[Thu Jan 28 21:12:25 2021]
+Finished job 41.
+71 of 164 steps (43%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:12:25 2021]
+rule run_filtering_of_residual_adapters:
+    input: NGS1041/adapter_trimmed/NGS1041_R1_val_1.fq.gz, NGS1041/adapter_trimmed/NGS1041_R2_val_2.fq.gz
+    output: NGS1041/adapter_trimmed/NGS1041_R1_val_1_posttrim_filter.fq.gz, NGS1041/adapter_trimmed/NGS1041_R2_val_2_posttrim_filter.fq.gz
+    jobid: 50
+    wildcards: sn=NGS1041
+    priority: 2
+    threads: 2
+
+
+	python3.6 /home/maria/covid_analysis_pavlos/covid-19-signal/scripts/filter_residual_adapters.py --input_R1 NGS1041/adapter_trimmed/NGS1041_R1_val_1.fq.gz --input_R2 NGS1041/adapter_trimmed/NGS1041_R2_val_2.fq.gz
+	
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 21:14:10 2021]
+Finished job 54.
+72 of 164 steps (44%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:14:10 2021]
+rule viral_reference_bwa_map:
+    input: NGS1001/adapter_trimmed/NGS1001_R1_val_1_posttrim_filter.fq.gz, NGS1001/adapter_trimmed/NGS1001_R2_val_2_posttrim_filter.fq.gz, NGS1001/core/viral_reference.bwt
+    output: NGS1001/core/NGS1001_viral_reference.bam
+    log: NGS1001/core/NGS1001_viral_reference_bwa.log
+    jobid: 77
+    benchmark: NGS1001/benchmarks/NGS1001_viral_reference_bwa_map.benchmark.tsv
+    wildcards: sn=NGS1001
+    threads: 2
+
+(bwa mem -t 2 NGS1001/core/viral_reference NGS1001/adapter_trimmed/NGS1001_R1_val_1_posttrim_filter.fq.gz NGS1001/adapter_trimmed/NGS1001_R2_val_2_posttrim_filter.fq.gz | samtools view -bS | samtools sort -@2 -o NGS1001/core/NGS1001_viral_reference.bam) 2> NGS1001/core/NGS1001_viral_reference_bwa.log
+
+[Thu Jan 28 21:14:10 2021]
+rule run_kraken2:
+    input: NGS1045/adapter_trimmed/NGS1045_R1_val_1_posttrim_filter.fq.gz, NGS1045/adapter_trimmed/NGS1045_R2_val_2_posttrim_filter.fq.gz
+    output: NGS1045/kraken2/NGS1045_kraken2.out
+    log: NGS1045/kraken2/NGS1045_kraken2.log
+    jobid: 154
+    benchmark: NGS1045/benchmarks/NGS1045_run_kraken2.benchmark.tsv
+    wildcards: sn=NGS1045
+
+cd NGS1045/kraken2 && kraken2 --db /home/maria/covid_analysis_pavlos/covid-19-signal/data/Kraken2/db --threads 1 --quick --unclassified-out "NGS1045_kraken2_unclassified_reads#" --classified-out "NGS1045_kraken2_classified_reads#" --output NGS1045_kraken2.out --paired --gzip-compressed ../../NGS1045/adapter_trimmed/NGS1045_R1_val_1_posttrim_filter.fq.gz ../../NGS1045/adapter_trimmed/NGS1045_R2_val_2_posttrim_filter.fq.gz --report NGS1045_kraken2.report 2>../../NGS1045/kraken2/NGS1045_kraken2.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 21:14:48 2021]
+Finished job 77.
+73 of 164 steps (45%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:14:48 2021]
+rule viral_reference_bwa_map:
+    input: NGS1045/adapter_trimmed/NGS1045_R1_val_1_posttrim_filter.fq.gz, NGS1045/adapter_trimmed/NGS1045_R2_val_2_posttrim_filter.fq.gz, NGS1045/core/viral_reference.bwt
+    output: NGS1045/core/NGS1045_viral_reference.bam
+    log: NGS1045/core/NGS1045_viral_reference_bwa.log
+    jobid: 107
+    benchmark: NGS1045/benchmarks/NGS1045_viral_reference_bwa_map.benchmark.tsv
+    wildcards: sn=NGS1045
+    threads: 2
+
+(bwa mem -t 2 NGS1045/core/viral_reference NGS1045/adapter_trimmed/NGS1045_R1_val_1_posttrim_filter.fq.gz NGS1045/adapter_trimmed/NGS1045_R2_val_2_posttrim_filter.fq.gz | samtools view -bS | samtools sort -@2 -o NGS1045/core/NGS1045_viral_reference.bam) 2> NGS1045/core/NGS1045_viral_reference_bwa.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 21:17:44 2021]
+Finished job 50.
+74 of 164 steps (45%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:17:44 2021]
+rule run_bed_primer_trim:
+    input: NGS1001/core/NGS1001_viral_reference.bam
+    output: NGS1001/core/NGS1001_viral_reference.mapping.primertrimmed.sorted.bam, NGS1001/core/NGS1001_viral_reference.mapping.primertrimmed.bam, NGS1001/core/NGS1001_viral_reference.mapping.bam
+    log: NGS1001/core/NGS1001_ivar_trim.log
+    jobid: 76
+    benchmark: NGS1001/benchmarks/NGS1001_bed_primer_trim.benchmark.tsv
+    wildcards: sn=NGS1001
+
+samtools view -F4 -o NGS1001/core/NGS1001_viral_reference.mapping.bam NGS1001/core/NGS1001_viral_reference.bam; samtools index NGS1001/core/NGS1001_viral_reference.mapping.bam; ivar trim -e -i NGS1001/core/NGS1001_viral_reference.mapping.bam -b /home/maria/covid_analysis_pavlos/covid-19-signal/resources/SARSCoV2.paragon.bed -m 20 -q 20 -p NGS1001/core/NGS1001_viral_reference.mapping.primertrimmed 2> NGS1001/core/NGS1001_ivar_trim.log; samtools sort -o NGS1001/core/NGS1001_viral_reference.mapping.primertrimmed.sorted.bam NGS1001/core/NGS1001_viral_reference.mapping.primertrimmed.bam
+
+[Thu Jan 28 21:17:44 2021]
+rule run_kraken2:
+    input: NGS1041/adapter_trimmed/NGS1041_R1_val_1_posttrim_filter.fq.gz, NGS1041/adapter_trimmed/NGS1041_R2_val_2_posttrim_filter.fq.gz
+    output: NGS1041/kraken2/NGS1041_kraken2.out
+    log: NGS1041/kraken2/NGS1041_kraken2.log
+    jobid: 150
+    benchmark: NGS1041/benchmarks/NGS1041_run_kraken2.benchmark.tsv
+    wildcards: sn=NGS1041
+
+cd NGS1041/kraken2 && kraken2 --db /home/maria/covid_analysis_pavlos/covid-19-signal/data/Kraken2/db --threads 1 --quick --unclassified-out "NGS1041_kraken2_unclassified_reads#" --classified-out "NGS1041_kraken2_classified_reads#" --output NGS1041_kraken2.out --paired --gzip-compressed ../../NGS1041/adapter_trimmed/NGS1041_R1_val_1_posttrim_filter.fq.gz ../../NGS1041/adapter_trimmed/NGS1041_R2_val_2_posttrim_filter.fq.gz --report NGS1041_kraken2.report 2>../../NGS1041/kraken2/NGS1041_kraken2.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/5258de7f
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+[Thu Jan 28 21:18:20 2021]
+Finished job 154.
+75 of 164 steps (46%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver.Run Snakemake with --verbose to see the full solver output for debugging the problem.
+[Thu Jan 28 21:18:21 2021]
+Finished job 150.
+76 of 164 steps (46%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:18:21 2021]
+rule viral_reference_bwa_map:
+    input: NGS1041/adapter_trimmed/NGS1041_R1_val_1_posttrim_filter.fq.gz, NGS1041/adapter_trimmed/NGS1041_R2_val_2_posttrim_filter.fq.gz, NGS1041/core/viral_reference.bwt
+    output: NGS1041/core/NGS1041_viral_reference.bam
+    log: NGS1041/core/NGS1041_viral_reference_bwa.log
+    jobid: 87
+    benchmark: NGS1041/benchmarks/NGS1041_viral_reference_bwa_map.benchmark.tsv
+    wildcards: sn=NGS1041
+    threads: 2
+
+(bwa mem -t 2 NGS1041/core/viral_reference NGS1041/adapter_trimmed/NGS1041_R1_val_1_posttrim_filter.fq.gz NGS1041/adapter_trimmed/NGS1041_R2_val_2_posttrim_filter.fq.gz | samtools view -bS | samtools sort -@2 -o NGS1041/core/NGS1041_viral_reference.bam) 2> NGS1041/core/NGS1041_viral_reference_bwa.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 21:19:34 2021]
+Finished job 87.
+77 of 164 steps (47%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:19:34 2021]
+rule run_bed_primer_trim:
+    input: NGS1041/core/NGS1041_viral_reference.bam
+    output: NGS1041/core/NGS1041_viral_reference.mapping.primertrimmed.sorted.bam, NGS1041/core/NGS1041_viral_reference.mapping.primertrimmed.bam, NGS1041/core/NGS1041_viral_reference.mapping.bam
+    log: NGS1041/core/NGS1041_ivar_trim.log
+    jobid: 86
+    benchmark: NGS1041/benchmarks/NGS1041_bed_primer_trim.benchmark.tsv
+    wildcards: sn=NGS1041
+
+samtools view -F4 -o NGS1041/core/NGS1041_viral_reference.mapping.bam NGS1041/core/NGS1041_viral_reference.bam; samtools index NGS1041/core/NGS1041_viral_reference.mapping.bam; ivar trim -e -i NGS1041/core/NGS1041_viral_reference.mapping.bam -b /home/maria/covid_analysis_pavlos/covid-19-signal/resources/SARSCoV2.paragon.bed -m 20 -q 20 -p NGS1041/core/NGS1041_viral_reference.mapping.primertrimmed 2> NGS1041/core/NGS1041_ivar_trim.log; samtools sort -o NGS1041/core/NGS1041_viral_reference.mapping.primertrimmed.sorted.bam NGS1041/core/NGS1041_viral_reference.mapping.primertrimmed.bam
+Activating conda environment: /home/maria/SNAKE_COVID/conda/5258de7f
+[Thu Jan 28 21:20:44 2021]
+Finished job 76.
+78 of 164 steps (48%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:20:44 2021]
+rule run_ivar_variants:
+    input: /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta, /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta.fai, NGS1001/core/NGS1001_viral_reference.mapping.primertrimmed.sorted.bam, /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.gff3
+    output: NGS1001/core/NGS1001_ivar_variants.tsv
+    log: NGS1001/core/NGS1001_ivar_variants.log
+    jobid: 121
+    benchmark: NGS1001/benchmarks/NGS1001_ivar_variants.benchmark.tsv
+    wildcards: sn=NGS1001
+
+(samtools mpileup -aa -A -d 0 --reference /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta -B -Q 0 NGS1001/core/NGS1001_viral_reference.mapping.primertrimmed.sorted.bam | ivar variants -r /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta -m 10 -p NGS1001/core/NGS1001_ivar_variants -q 20 -t 0.25 -g /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.gff3) 2> NGS1001/core/NGS1001_ivar_variants.log
+
+[Thu Jan 28 21:20:44 2021]
+rule get_mapping_reads:
+    input: NGS1001/core/NGS1001_viral_reference.mapping.primertrimmed.bam
+    output: NGS1001/mapped_clean_reads/NGS1001_R1.fastq.gz, NGS1001/mapped_clean_reads/NGS1001_R2.fastq.gz, NGS1001/mapped_clean_reads/NGS1001_singletons.fastq.gz, NGS1001/mapped_clean_reads/NGS1001_sorted_clean.bam
+    log: NGS1001/mapped_clean_reads/NGS1001_samtools_fastq.log
+    jobid: 75
+    benchmark: NGS1001/benchmarks/NGS1001_get_mapping_reads.benchmark.tsv
+    wildcards: sn=NGS1001
+    priority: 2
+
+
+        samtools sort -n NGS1001/core/NGS1001_viral_reference.mapping.primertrimmed.bam -o NGS1001/mapped_clean_reads/NGS1001_sorted_clean.bam 2> NGS1001/mapped_clean_reads/NGS1001_samtools_fastq.log
+        samtools fastq -1 NGS1001/mapped_clean_reads/NGS1001_R1.fastq.gz -2 NGS1001/mapped_clean_reads/NGS1001_R2.fastq.gz -s NGS1001/mapped_clean_reads/NGS1001_singletons.fastq.gz NGS1001/mapped_clean_reads/NGS1001_sorted_clean.bam 2>> NGS1001/mapped_clean_reads/NGS1001_samtools_fastq.log 
+        
+Activating conda environment: /home/maria/SNAKE_COVID/conda/5258de7f
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 21:21:03 2021]
+Finished job 121.
+79 of 164 steps (48%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:21:03 2021]
+rule run_ivar_consensus:
+    input: NGS1001/core/NGS1001_viral_reference.mapping.primertrimmed.sorted.bam
+    output: NGS1001/core/NGS1001.consensus.fa
+    log: NGS1001/core/NGS1001_ivar_consensus.log
+    jobid: 111
+    benchmark: NGS1001/benchmarks/NGS1001_ivar_consensus.benchmark.tsv
+    wildcards: sn=NGS1001
+
+(samtools mpileup -aa -A -d 100000 -Q0 NGS1001/core/NGS1001_viral_reference.mapping.primertrimmed.sorted.bam | ivar consensus -t 0.75 -m 10 -n N -p NGS1001/core/NGS1001.consensus) 2>NGS1001/core/NGS1001_ivar_consensus.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/5258de7f
+[Thu Jan 28 21:21:20 2021]
+Finished job 111.
+80 of 164 steps (49%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:21:20 2021]
+rule run_quast:
+    input: NGS1001/core/NGS1001.consensus.fa
+    output: NGS1001/quast/NGS1001_quast_report.html
+    log: NGS1001/quast/NGS1001_quast.log
+    jobid: 157
+    benchmark: NGS1001/benchmarks/NGS1001_run_quast.benchmark.tsv
+    wildcards: sn=NGS1001
+
+quast NGS1001/core/NGS1001.consensus.fa -r /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta -g /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.gff3 --output-dir NGS1001/quast --threads 1 >NGS1001/quast/NGS1001_quast.log && for f in NGS1001/quast/report.*; do mv $f ${f/report/NGS1001_quast_report}; done
+[Thu Jan 28 21:21:22 2021]
+Finished job 75.
+81 of 164 steps (49%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:21:22 2021]
+rule run_fastqc_on_mapped_reads:
+    input: NGS1001/mapped_clean_reads/NGS1001_R1.fastq.gz, NGS1001/mapped_clean_reads/NGS1001_R2.fastq.gz
+    output: NGS1001/mapped_clean_reads/NGS1001_R1_fastqc.html, NGS1001/mapped_clean_reads/NGS1001_R2_fastqc.html
+    log: NGS1001/mapped_clean_reads/NGS1001_fastqc.log
+    jobid: 74
+    benchmark: NGS1001/benchmarks/NGS1001_clean_fastqc.benchmark.tsv
+    wildcards: sn=NGS1001
+
+
+        fastqc -o NGS1001/mapped_clean_reads NGS1001/mapped_clean_reads/NGS1001_R1.fastq.gz NGS1001/mapped_clean_reads/NGS1001_R2.fastq.gz 2> NGS1001/mapped_clean_reads/NGS1001_fastqc.log
+        
+Activating conda environment: /home/maria/SNAKE_COVID/conda/2d0610a0
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+[Thu Jan 28 21:21:26 2021]
+Finished job 157.
+82 of 164 steps (50%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:21:26 2021]
+rule coverage_depth:
+    input: NGS1001/core/NGS1001_viral_reference.mapping.primertrimmed.sorted.bam
+    output: NGS1001/coverage/NGS1001_depth.txt
+    jobid: 130
+    benchmark: NGS1001/benchmarks/NGS1001_coverage_depth.benchmark.tsv
+    wildcards: sn=NGS1001
+
+bedtools genomecov -d -ibam NGS1001/core/NGS1001_viral_reference.mapping.primertrimmed.sorted.bam >NGS1001/coverage/NGS1001_depth.txt
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 21:21:36 2021]
+Finished job 130.
+83 of 164 steps (51%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:21:36 2021]
+rule generate_coverage_plot:
+    input: NGS1001/coverage/NGS1001_depth.txt
+    output: NGS1001/coverage/NGS1001_coverage_plot.png
+    jobid: 139
+    wildcards: sn=NGS1001
+
+/home/maria/covid_analysis_pavlos/covid-19-signal/scripts/generate_coverage_plot.py NGS1001/coverage/NGS1001_depth.txt NGS1001/coverage/NGS1001_coverage_plot.png
+Activating conda environment: /home/maria/SNAKE_COVID/conda/4bc6b9de
+[Thu Jan 28 21:21:39 2021]
+Error in rule generate_coverage_plot:
+    jobid: 139
+    output: NGS1001/coverage/NGS1001_coverage_plot.png
+    conda-env: /home/maria/SNAKE_COVID/conda/4bc6b9de
+    shell:
+        /home/maria/covid_analysis_pavlos/covid-19-signal/scripts/generate_coverage_plot.py NGS1001/coverage/NGS1001_depth.txt NGS1001/coverage/NGS1001_coverage_plot.png
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Job failed, going on with independent jobs.
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver.Run Snakemake with --verbose to see the full solver output for debugging the problem.
+[Thu Jan 28 21:21:40 2021]
+Finished job 74.
+84 of 164 steps (51%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver.Run Snakemake with --verbose to see the full solver output for debugging the problem.
+[Thu Jan 28 21:23:04 2021]
+Finished job 107.
+85 of 164 steps (52%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:23:04 2021]
+rule raw_reads_composite_reference_bwa_map:
+    input: NGS1043/raw_fastq/NGS1043_R1.fastq.gz, NGS1043/raw_fastq/NGS1043_R2.fastq.gz
+    output: NGS1043/host_removal/NGS1043_viral_and_nonmapping_reads.bam
+    log: NGS1043/host_removal/NGS1043_human_read_mapping.log
+    jobid: 32
+    benchmark: NGS1043/benchmarks/NGS1043_composite_reference_bwa_map.benchmark.tsv
+    wildcards: sn=NGS1043
+    threads: 4
+
+(conda info --envs; bwa mem -t 4 /home/maria/covid_analysis_pavlos/covid-19-signal/data/composite_human_viral_reference.fna NGS1043/raw_fastq/NGS1043_R1.fastq.gz NGS1043/raw_fastq/NGS1043_R2.fastq.gz | /home/maria/covid_analysis_pavlos/covid-19-signal/scripts/filter_non_human_reads.py -c MN908947.3 > NGS1043/host_removal/NGS1043_viral_and_nonmapping_reads.bam) 2> NGS1043/host_removal/NGS1043_human_read_mapping.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 21:24:30 2021]
+Finished job 86.
+86 of 164 steps (52%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:24:30 2021]
+rule get_mapping_reads:
+    input: NGS1041/core/NGS1041_viral_reference.mapping.primertrimmed.bam
+    output: NGS1041/mapped_clean_reads/NGS1041_R1.fastq.gz, NGS1041/mapped_clean_reads/NGS1041_R2.fastq.gz, NGS1041/mapped_clean_reads/NGS1041_singletons.fastq.gz, NGS1041/mapped_clean_reads/NGS1041_sorted_clean.bam
+    log: NGS1041/mapped_clean_reads/NGS1041_samtools_fastq.log
+    jobid: 85
+    benchmark: NGS1041/benchmarks/NGS1041_get_mapping_reads.benchmark.tsv
+    wildcards: sn=NGS1041
+    priority: 2
+
+
+        samtools sort -n NGS1041/core/NGS1041_viral_reference.mapping.primertrimmed.bam -o NGS1041/mapped_clean_reads/NGS1041_sorted_clean.bam 2> NGS1041/mapped_clean_reads/NGS1041_samtools_fastq.log
+        samtools fastq -1 NGS1041/mapped_clean_reads/NGS1041_R1.fastq.gz -2 NGS1041/mapped_clean_reads/NGS1041_R2.fastq.gz -s NGS1041/mapped_clean_reads/NGS1041_singletons.fastq.gz NGS1041/mapped_clean_reads/NGS1041_sorted_clean.bam 2>> NGS1041/mapped_clean_reads/NGS1041_samtools_fastq.log 
+        
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 21:25:23 2021]
+Finished job 85.
+87 of 164 steps (53%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:25:23 2021]
+rule coverage_depth:
+    input: NGS1041/core/NGS1041_viral_reference.mapping.primertrimmed.sorted.bam
+    output: NGS1041/coverage/NGS1041_depth.txt
+    jobid: 132
+    benchmark: NGS1041/benchmarks/NGS1041_coverage_depth.benchmark.tsv
+    wildcards: sn=NGS1041
+
+bedtools genomecov -d -ibam NGS1041/core/NGS1041_viral_reference.mapping.primertrimmed.sorted.bam >NGS1041/coverage/NGS1041_depth.txt
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 21:25:36 2021]
+Finished job 132.
+88 of 164 steps (54%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:25:36 2021]
+rule generate_coverage_plot:
+    input: NGS1041/coverage/NGS1041_depth.txt
+    output: NGS1041/coverage/NGS1041_coverage_plot.png
+    jobid: 141
+    wildcards: sn=NGS1041
+
+/home/maria/covid_analysis_pavlos/covid-19-signal/scripts/generate_coverage_plot.py NGS1041/coverage/NGS1041_depth.txt NGS1041/coverage/NGS1041_coverage_plot.png
+Activating conda environment: /home/maria/SNAKE_COVID/conda/4bc6b9de
+[Thu Jan 28 21:25:37 2021]
+Error in rule generate_coverage_plot:
+    jobid: 141
+    output: NGS1041/coverage/NGS1041_coverage_plot.png
+    conda-env: /home/maria/SNAKE_COVID/conda/4bc6b9de
+    shell:
+        /home/maria/covid_analysis_pavlos/covid-19-signal/scripts/generate_coverage_plot.py NGS1041/coverage/NGS1041_depth.txt NGS1041/coverage/NGS1041_coverage_plot.png
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Job failed, going on with independent jobs.
+Select jobs to execute...
+
+[Thu Jan 28 21:25:37 2021]
+rule run_fastqc_on_mapped_reads:
+    input: NGS1041/mapped_clean_reads/NGS1041_R1.fastq.gz, NGS1041/mapped_clean_reads/NGS1041_R2.fastq.gz
+    output: NGS1041/mapped_clean_reads/NGS1041_R1_fastqc.html, NGS1041/mapped_clean_reads/NGS1041_R2_fastqc.html
+    log: NGS1041/mapped_clean_reads/NGS1041_fastqc.log
+    jobid: 84
+    benchmark: NGS1041/benchmarks/NGS1041_clean_fastqc.benchmark.tsv
+    wildcards: sn=NGS1041
+
+
+        fastqc -o NGS1041/mapped_clean_reads NGS1041/mapped_clean_reads/NGS1041_R1.fastq.gz NGS1041/mapped_clean_reads/NGS1041_R2.fastq.gz 2> NGS1041/mapped_clean_reads/NGS1041_fastqc.log
+        
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+[Thu Jan 28 21:25:58 2021]
+Finished job 84.
+89 of 164 steps (54%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:25:58 2021]
+rule run_ivar_consensus:
+    input: NGS1041/core/NGS1041_viral_reference.mapping.primertrimmed.sorted.bam
+    output: NGS1041/core/NGS1041.consensus.fa
+    log: NGS1041/core/NGS1041_ivar_consensus.log
+    jobid: 113
+    benchmark: NGS1041/benchmarks/NGS1041_ivar_consensus.benchmark.tsv
+    wildcards: sn=NGS1041
+
+(samtools mpileup -aa -A -d 100000 -Q0 NGS1041/core/NGS1041_viral_reference.mapping.primertrimmed.sorted.bam | ivar consensus -t 0.75 -m 10 -n N -p NGS1041/core/NGS1041.consensus) 2>NGS1041/core/NGS1041_ivar_consensus.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/5258de7f
+[Thu Jan 28 21:26:24 2021]
+Finished job 113.
+90 of 164 steps (55%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:26:24 2021]
+rule run_ivar_variants:
+    input: /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta, /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta.fai, NGS1041/core/NGS1041_viral_reference.mapping.primertrimmed.sorted.bam, /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.gff3
+    output: NGS1041/core/NGS1041_ivar_variants.tsv
+    log: NGS1041/core/NGS1041_ivar_variants.log
+    jobid: 123
+    benchmark: NGS1041/benchmarks/NGS1041_ivar_variants.benchmark.tsv
+    wildcards: sn=NGS1041
+
+(samtools mpileup -aa -A -d 0 --reference /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta -B -Q 0 NGS1041/core/NGS1041_viral_reference.mapping.primertrimmed.sorted.bam | ivar variants -r /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta -m 10 -p NGS1041/core/NGS1041_ivar_variants -q 20 -t 0.25 -g /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.gff3) 2> NGS1041/core/NGS1041_ivar_variants.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/5258de7f
+[Thu Jan 28 21:26:51 2021]
+Finished job 123.
+91 of 164 steps (55%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:26:51 2021]
+rule run_quast:
+    input: NGS1041/core/NGS1041.consensus.fa
+    output: NGS1041/quast/NGS1041_quast_report.html
+    log: NGS1041/quast/NGS1041_quast.log
+    jobid: 159
+    benchmark: NGS1041/benchmarks/NGS1041_run_quast.benchmark.tsv
+    wildcards: sn=NGS1041
+
+quast NGS1041/core/NGS1041.consensus.fa -r /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta -g /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.gff3 --output-dir NGS1041/quast --threads 1 >NGS1041/quast/NGS1041_quast.log && for f in NGS1041/quast/report.*; do mv $f ${f/report/NGS1041_quast_report}; done
+Activating conda environment: /home/maria/SNAKE_COVID/conda/2d0610a0
+[Thu Jan 28 21:26:57 2021]
+Finished job 159.
+92 of 164 steps (56%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:26:57 2021]
+rule run_bed_primer_trim:
+    input: NGS1045/core/NGS1045_viral_reference.bam
+    output: NGS1045/core/NGS1045_viral_reference.mapping.primertrimmed.sorted.bam, NGS1045/core/NGS1045_viral_reference.mapping.primertrimmed.bam, NGS1045/core/NGS1045_viral_reference.mapping.bam
+    log: NGS1045/core/NGS1045_ivar_trim.log
+    jobid: 106
+    benchmark: NGS1045/benchmarks/NGS1045_bed_primer_trim.benchmark.tsv
+    wildcards: sn=NGS1045
+
+samtools view -F4 -o NGS1045/core/NGS1045_viral_reference.mapping.bam NGS1045/core/NGS1045_viral_reference.bam; samtools index NGS1045/core/NGS1045_viral_reference.mapping.bam; ivar trim -e -i NGS1045/core/NGS1045_viral_reference.mapping.bam -b /home/maria/covid_analysis_pavlos/covid-19-signal/resources/SARSCoV2.paragon.bed -m 20 -q 20 -p NGS1045/core/NGS1045_viral_reference.mapping.primertrimmed 2> NGS1045/core/NGS1045_ivar_trim.log; samtools sort -o NGS1045/core/NGS1045_viral_reference.mapping.primertrimmed.sorted.bam NGS1045/core/NGS1045_viral_reference.mapping.primertrimmed.bam
+Activating conda environment: /home/maria/SNAKE_COVID/conda/5258de7f
+[Thu Jan 28 21:29:11 2021]
+Finished job 101.
+93 of 164 steps (57%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:29:12 2021]
+rule get_mapping_reads:
+    input: NGS1044/core/NGS1044_viral_reference.mapping.primertrimmed.bam
+    output: NGS1044/mapped_clean_reads/NGS1044_R1.fastq.gz, NGS1044/mapped_clean_reads/NGS1044_R2.fastq.gz, NGS1044/mapped_clean_reads/NGS1044_singletons.fastq.gz, NGS1044/mapped_clean_reads/NGS1044_sorted_clean.bam
+    log: NGS1044/mapped_clean_reads/NGS1044_samtools_fastq.log
+    jobid: 100
+    benchmark: NGS1044/benchmarks/NGS1044_get_mapping_reads.benchmark.tsv
+    wildcards: sn=NGS1044
+    priority: 2
+
+
+        samtools sort -n NGS1044/core/NGS1044_viral_reference.mapping.primertrimmed.bam -o NGS1044/mapped_clean_reads/NGS1044_sorted_clean.bam 2> NGS1044/mapped_clean_reads/NGS1044_samtools_fastq.log
+        samtools fastq -1 NGS1044/mapped_clean_reads/NGS1044_R1.fastq.gz -2 NGS1044/mapped_clean_reads/NGS1044_R2.fastq.gz -s NGS1044/mapped_clean_reads/NGS1044_singletons.fastq.gz NGS1044/mapped_clean_reads/NGS1044_sorted_clean.bam 2>> NGS1044/mapped_clean_reads/NGS1044_samtools_fastq.log 
+        
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 21:29:39 2021]
+Finished job 32.
+94 of 164 steps (57%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:29:39 2021]
+rule get_host_removed_reads:
+    input: NGS1043/host_removal/NGS1043_viral_and_nonmapping_reads.bam
+    output: NGS1043/host_removal/NGS1043_R1.fastq.gz, NGS1043/host_removal/NGS1043_R2.fastq.gz, NGS1043/host_removal/NGS1043_singletons.fastq.gz, NGS1043/host_removal/NGS1043_viral_and_nonmapping_reads_filtered_sorted.bam
+    log: NGS1043/host_removal/NGS1043_samtools_fastq.log
+    jobid: 31
+    benchmark: NGS1043/benchmarks/NGS1043_get_host_removed_reads.benchmark.tsv
+    wildcards: sn=NGS1043
+    threads: 2
+
+
+        samtools view -b NGS1043/host_removal/NGS1043_viral_and_nonmapping_reads.bam | samtools sort -n -@2 > NGS1043/host_removal/NGS1043_viral_and_nonmapping_reads_filtered_sorted.bam 2> NGS1043/host_removal/NGS1043_samtools_fastq.log
+        samtools fastq -1 NGS1043/host_removal/NGS1043_R1.fastq.gz -2 NGS1043/host_removal/NGS1043_R2.fastq.gz -s NGS1043/host_removal/NGS1043_singletons.fastq.gz NGS1043/host_removal/NGS1043_viral_and_nonmapping_reads_filtered_sorted.bam 2>> NGS1043/host_removal/NGS1043_samtools_fastq.log 
+        
+
+[Thu Jan 28 21:29:39 2021]
+rule coverage_depth:
+    input: NGS1044/core/NGS1044_viral_reference.mapping.primertrimmed.sorted.bam
+    output: NGS1044/coverage/NGS1044_depth.txt
+    jobid: 135
+    benchmark: NGS1044/benchmarks/NGS1044_coverage_depth.benchmark.tsv
+    wildcards: sn=NGS1044
+
+bedtools genomecov -d -ibam NGS1044/core/NGS1044_viral_reference.mapping.primertrimmed.sorted.bam >NGS1044/coverage/NGS1044_depth.txt
+
+[Thu Jan 28 21:29:39 2021]
+rule run_ivar_variants:
+    input: /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta, /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta.fai, NGS1044/core/NGS1044_viral_reference.mapping.primertrimmed.sorted.bam, /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.gff3
+    output: NGS1044/core/NGS1044_ivar_variants.tsv
+    log: NGS1044/core/NGS1044_ivar_variants.log
+    jobid: 126
+    benchmark: NGS1044/benchmarks/NGS1044_ivar_variants.benchmark.tsv
+    wildcards: sn=NGS1044
+
+(samtools mpileup -aa -A -d 0 --reference /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta -B -Q 0 NGS1044/core/NGS1044_viral_reference.mapping.primertrimmed.sorted.bam | ivar variants -r /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta -m 10 -p NGS1044/core/NGS1044_ivar_variants -q 20 -t 0.25 -g /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.gff3) 2> NGS1044/core/NGS1044_ivar_variants.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+Activating conda environment: /home/maria/SNAKE_COVID/conda/5258de7f
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 21:30:26 2021]
+Finished job 135.
+95 of 164 steps (58%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:30:26 2021]
+rule generate_coverage_plot:
+    input: NGS1044/coverage/NGS1044_depth.txt
+    output: NGS1044/coverage/NGS1044_coverage_plot.png
+    jobid: 144
+    wildcards: sn=NGS1044
+
+/home/maria/covid_analysis_pavlos/covid-19-signal/scripts/generate_coverage_plot.py NGS1044/coverage/NGS1044_depth.txt NGS1044/coverage/NGS1044_coverage_plot.png
+Activating conda environment: /home/maria/SNAKE_COVID/conda/4bc6b9de
+[Thu Jan 28 21:30:29 2021]
+Error in rule generate_coverage_plot:
+    jobid: 144
+    output: NGS1044/coverage/NGS1044_coverage_plot.png
+    conda-env: /home/maria/SNAKE_COVID/conda/4bc6b9de
+    shell:
+        /home/maria/covid_analysis_pavlos/covid-19-signal/scripts/generate_coverage_plot.py NGS1044/coverage/NGS1044_depth.txt NGS1044/coverage/NGS1044_coverage_plot.png
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Job failed, going on with independent jobs.
+Select jobs to execute...
+
+[Thu Jan 28 21:30:29 2021]
+rule run_ivar_consensus:
+    input: NGS1044/core/NGS1044_viral_reference.mapping.primertrimmed.sorted.bam
+    output: NGS1044/core/NGS1044.consensus.fa
+    log: NGS1044/core/NGS1044_ivar_consensus.log
+    jobid: 116
+    benchmark: NGS1044/benchmarks/NGS1044_ivar_consensus.benchmark.tsv
+    wildcards: sn=NGS1044
+
+(samtools mpileup -aa -A -d 100000 -Q0 NGS1044/core/NGS1044_viral_reference.mapping.primertrimmed.sorted.bam | ivar consensus -t 0.75 -m 10 -n N -p NGS1044/core/NGS1044.consensus) 2>NGS1044/core/NGS1044_ivar_consensus.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/5258de7f
+[Thu Jan 28 21:30:34 2021]
+Finished job 31.
+96 of 164 steps (59%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:30:34 2021]
+rule run_trimgalore:
+    input: NGS1043/host_removal/NGS1043_R1.fastq.gz, NGS1043/host_removal/NGS1043_R2.fastq.gz
+    output: NGS1043/adapter_trimmed/NGS1043_R1_val_1.fq.gz, NGS1043/adapter_trimmed/NGS1043_R2_val_2.fq.gz, NGS1043/adapter_trimmed/NGS1043_R1_val_1_fastqc.html, NGS1043/adapter_trimmed/NGS1043_R2_val_2_fastqc.html
+    log: NGS1043/adapter_trimmed/NGS1043_trim_galore.log
+    jobid: 43
+    benchmark: NGS1043/benchmarks/NGS1043_trimgalore.benchmark.tsv
+    wildcards: sn=NGS1043
+    priority: 2
+    threads: 2
+
+trim_galore --quality 20 --length 20  -o NGS1043/adapter_trimmed --cores 2 --fastqc --paired NGS1043/host_removal/NGS1043_R1.fastq.gz NGS1043/host_removal/NGS1043_R2.fastq.gz 2> NGS1043/adapter_trimmed/NGS1043_trim_galore.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+[Thu Jan 28 21:30:50 2021]
+Finished job 49.
+97 of 164 steps (59%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:30:50 2021]
+rule viral_reference_bwa_map:
+    input: NGS1040/adapter_trimmed/NGS1040_R1_val_1_posttrim_filter.fq.gz, NGS1040/adapter_trimmed/NGS1040_R2_val_2_posttrim_filter.fq.gz, NGS1040/core/viral_reference.bwt
+    output: NGS1040/core/NGS1040_viral_reference.bam
+    log: NGS1040/core/NGS1040_viral_reference_bwa.log
+    jobid: 82
+    benchmark: NGS1040/benchmarks/NGS1040_viral_reference_bwa_map.benchmark.tsv
+    wildcards: sn=NGS1040
+    threads: 2
+
+(bwa mem -t 2 NGS1040/core/viral_reference NGS1040/adapter_trimmed/NGS1040_R1_val_1_posttrim_filter.fq.gz NGS1040/adapter_trimmed/NGS1040_R2_val_2_posttrim_filter.fq.gz | samtools view -bS | samtools sort -@2 -o NGS1040/core/NGS1040_viral_reference.bam) 2> NGS1040/core/NGS1040_viral_reference_bwa.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 21:31:15 2021]
+Finished job 43.
+98 of 164 steps (60%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:31:15 2021]
+rule run_filtering_of_residual_adapters:
+    input: NGS1043/adapter_trimmed/NGS1043_R1_val_1.fq.gz, NGS1043/adapter_trimmed/NGS1043_R2_val_2.fq.gz
+    output: NGS1043/adapter_trimmed/NGS1043_R1_val_1_posttrim_filter.fq.gz, NGS1043/adapter_trimmed/NGS1043_R2_val_2_posttrim_filter.fq.gz
+    jobid: 52
+    wildcards: sn=NGS1043
+    priority: 2
+    threads: 2
+
+
+	python3.6 /home/maria/covid_analysis_pavlos/covid-19-signal/scripts/filter_residual_adapters.py --input_R1 NGS1043/adapter_trimmed/NGS1043_R1_val_1.fq.gz --input_R2 NGS1043/adapter_trimmed/NGS1043_R2_val_2.fq.gz
+	
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 21:33:16 2021]
+Finished job 126.
+99 of 164 steps (60%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:33:16 2021]
+rule run_kraken2:
+    input: NGS1040/adapter_trimmed/NGS1040_R1_val_1_posttrim_filter.fq.gz, NGS1040/adapter_trimmed/NGS1040_R2_val_2_posttrim_filter.fq.gz
+    output: NGS1040/kraken2/NGS1040_kraken2.out
+    log: NGS1040/kraken2/NGS1040_kraken2.log
+    jobid: 149
+    benchmark: NGS1040/benchmarks/NGS1040_run_kraken2.benchmark.tsv
+    wildcards: sn=NGS1040
+
+cd NGS1040/kraken2 && kraken2 --db /home/maria/covid_analysis_pavlos/covid-19-signal/data/Kraken2/db --threads 1 --quick --unclassified-out "NGS1040_kraken2_unclassified_reads#" --classified-out "NGS1040_kraken2_classified_reads#" --output NGS1040_kraken2.out --paired --gzip-compressed ../../NGS1040/adapter_trimmed/NGS1040_R1_val_1_posttrim_filter.fq.gz ../../NGS1040/adapter_trimmed/NGS1040_R2_val_2_posttrim_filter.fq.gz --report NGS1040_kraken2.report 2>../../NGS1040/kraken2/NGS1040_kraken2.log
+[Thu Jan 28 21:33:18 2021]
+Finished job 52.
+100 of 164 steps (61%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:33:19 2021]
+rule viral_reference_bwa_map:
+    input: NGS1043/adapter_trimmed/NGS1043_R1_val_1_posttrim_filter.fq.gz, NGS1043/adapter_trimmed/NGS1043_R2_val_2_posttrim_filter.fq.gz, NGS1043/core/viral_reference.bwt
+    output: NGS1043/core/NGS1043_viral_reference.bam
+    log: NGS1043/core/NGS1043_viral_reference_bwa.log
+    jobid: 97
+    benchmark: NGS1043/benchmarks/NGS1043_viral_reference_bwa_map.benchmark.tsv
+    wildcards: sn=NGS1043
+    threads: 2
+
+(bwa mem -t 2 NGS1043/core/viral_reference NGS1043/adapter_trimmed/NGS1043_R1_val_1_posttrim_filter.fq.gz NGS1043/adapter_trimmed/NGS1043_R2_val_2_posttrim_filter.fq.gz | samtools view -bS | samtools sort -@2 -o NGS1043/core/NGS1043_viral_reference.bam) 2> NGS1043/core/NGS1043_viral_reference_bwa.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 21:33:31 2021]
+Finished job 100.
+101 of 164 steps (62%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:33:31 2021]
+rule run_kraken2:
+    input: NGS1043/adapter_trimmed/NGS1043_R1_val_1_posttrim_filter.fq.gz, NGS1043/adapter_trimmed/NGS1043_R2_val_2_posttrim_filter.fq.gz
+    output: NGS1043/kraken2/NGS1043_kraken2.out
+    log: NGS1043/kraken2/NGS1043_kraken2.log
+    jobid: 152
+    benchmark: NGS1043/benchmarks/NGS1043_run_kraken2.benchmark.tsv
+    wildcards: sn=NGS1043
+
+cd NGS1043/kraken2 && kraken2 --db /home/maria/covid_analysis_pavlos/covid-19-signal/data/Kraken2/db --threads 1 --quick --unclassified-out "NGS1043_kraken2_unclassified_reads#" --classified-out "NGS1043_kraken2_classified_reads#" --output NGS1043_kraken2.out --paired --gzip-compressed ../../NGS1043/adapter_trimmed/NGS1043_R1_val_1_posttrim_filter.fq.gz ../../NGS1043/adapter_trimmed/NGS1043_R2_val_2_posttrim_filter.fq.gz --report NGS1043_kraken2.report 2>../../NGS1043/kraken2/NGS1043_kraken2.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+[Thu Jan 28 21:33:47 2021]
+Finished job 152.
+102 of 164 steps (62%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:33:47 2021]
+rule run_fastqc_on_mapped_reads:
+    input: NGS1044/mapped_clean_reads/NGS1044_R1.fastq.gz, NGS1044/mapped_clean_reads/NGS1044_R2.fastq.gz
+    output: NGS1044/mapped_clean_reads/NGS1044_R1_fastqc.html, NGS1044/mapped_clean_reads/NGS1044_R2_fastqc.html
+    log: NGS1044/mapped_clean_reads/NGS1044_fastqc.log
+    jobid: 99
+    benchmark: NGS1044/benchmarks/NGS1044_clean_fastqc.benchmark.tsv
+    wildcards: sn=NGS1044
+
+
+        fastqc -o NGS1044/mapped_clean_reads NGS1044/mapped_clean_reads/NGS1044_R1.fastq.gz NGS1044/mapped_clean_reads/NGS1044_R2.fastq.gz 2> NGS1044/mapped_clean_reads/NGS1044_fastqc.log
+        
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+[Thu Jan 28 21:33:53 2021]
+Finished job 97.
+103 of 164 steps (63%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:33:53 2021]
+rule run_bed_primer_trim:
+    input: NGS1043/core/NGS1043_viral_reference.bam
+    output: NGS1043/core/NGS1043_viral_reference.mapping.primertrimmed.sorted.bam, NGS1043/core/NGS1043_viral_reference.mapping.primertrimmed.bam, NGS1043/core/NGS1043_viral_reference.mapping.bam
+    log: NGS1043/core/NGS1043_ivar_trim.log
+    jobid: 96
+    benchmark: NGS1043/benchmarks/NGS1043_bed_primer_trim.benchmark.tsv
+    wildcards: sn=NGS1043
+
+samtools view -F4 -o NGS1043/core/NGS1043_viral_reference.mapping.bam NGS1043/core/NGS1043_viral_reference.bam; samtools index NGS1043/core/NGS1043_viral_reference.mapping.bam; ivar trim -e -i NGS1043/core/NGS1043_viral_reference.mapping.bam -b /home/maria/covid_analysis_pavlos/covid-19-signal/resources/SARSCoV2.paragon.bed -m 20 -q 20 -p NGS1043/core/NGS1043_viral_reference.mapping.primertrimmed 2> NGS1043/core/NGS1043_ivar_trim.log; samtools sort -o NGS1043/core/NGS1043_viral_reference.mapping.primertrimmed.sorted.bam NGS1043/core/NGS1043_viral_reference.mapping.primertrimmed.bam
+Activating conda environment: /home/maria/SNAKE_COVID/conda/5258de7f
+[Thu Jan 28 21:34:05 2021]
+Finished job 116.
+104 of 164 steps (63%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:34:05 2021]
+rule run_quast:
+    input: NGS1044/core/NGS1044.consensus.fa
+    output: NGS1044/quast/NGS1044_quast_report.html
+    log: NGS1044/quast/NGS1044_quast.log
+    jobid: 162
+    benchmark: NGS1044/benchmarks/NGS1044_run_quast.benchmark.tsv
+    wildcards: sn=NGS1044
+
+quast NGS1044/core/NGS1044.consensus.fa -r /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta -g /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.gff3 --output-dir NGS1044/quast --threads 1 >NGS1044/quast/NGS1044_quast.log && for f in NGS1044/quast/report.*; do mv $f ${f/report/NGS1044_quast_report}; done
+Activating conda environment: /home/maria/SNAKE_COVID/conda/2d0610a0
+[Thu Jan 28 21:34:11 2021]
+Finished job 162.
+105 of 164 steps (64%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver.Run Snakemake with --verbose to see the full solver output for debugging the problem.
+[Thu Jan 28 21:35:06 2021]
+Finished job 99.
+106 of 164 steps (65%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver.Run Snakemake with --verbose to see the full solver output for debugging the problem.
+[Thu Jan 28 21:36:21 2021]
+Finished job 96.
+107 of 164 steps (65%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:36:21 2021]
+rule coverage_depth:
+    input: NGS1043/core/NGS1043_viral_reference.mapping.primertrimmed.sorted.bam
+    output: NGS1043/coverage/NGS1043_depth.txt
+    jobid: 134
+    benchmark: NGS1043/benchmarks/NGS1043_coverage_depth.benchmark.tsv
+    wildcards: sn=NGS1043
+
+bedtools genomecov -d -ibam NGS1043/core/NGS1043_viral_reference.mapping.primertrimmed.sorted.bam >NGS1043/coverage/NGS1043_depth.txt
+
+[Thu Jan 28 21:36:21 2021]
+rule run_ivar_consensus:
+    input: NGS1043/core/NGS1043_viral_reference.mapping.primertrimmed.sorted.bam
+    output: NGS1043/core/NGS1043.consensus.fa
+    log: NGS1043/core/NGS1043_ivar_consensus.log
+    jobid: 115
+    benchmark: NGS1043/benchmarks/NGS1043_ivar_consensus.benchmark.tsv
+    wildcards: sn=NGS1043
+
+(samtools mpileup -aa -A -d 100000 -Q0 NGS1043/core/NGS1043_viral_reference.mapping.primertrimmed.sorted.bam | ivar consensus -t 0.75 -m 10 -n N -p NGS1043/core/NGS1043.consensus) 2>NGS1043/core/NGS1043_ivar_consensus.log
+
+[Thu Jan 28 21:36:21 2021]
+rule get_mapping_reads:
+    input: NGS1043/core/NGS1043_viral_reference.mapping.primertrimmed.bam
+    output: NGS1043/mapped_clean_reads/NGS1043_R1.fastq.gz, NGS1043/mapped_clean_reads/NGS1043_R2.fastq.gz, NGS1043/mapped_clean_reads/NGS1043_singletons.fastq.gz, NGS1043/mapped_clean_reads/NGS1043_sorted_clean.bam
+    log: NGS1043/mapped_clean_reads/NGS1043_samtools_fastq.log
+    jobid: 95
+    benchmark: NGS1043/benchmarks/NGS1043_get_mapping_reads.benchmark.tsv
+    wildcards: sn=NGS1043
+    priority: 2
+
+
+        samtools sort -n NGS1043/core/NGS1043_viral_reference.mapping.primertrimmed.bam -o NGS1043/mapped_clean_reads/NGS1043_sorted_clean.bam 2> NGS1043/mapped_clean_reads/NGS1043_samtools_fastq.log
+        samtools fastq -1 NGS1043/mapped_clean_reads/NGS1043_R1.fastq.gz -2 NGS1043/mapped_clean_reads/NGS1043_R2.fastq.gz -s NGS1043/mapped_clean_reads/NGS1043_singletons.fastq.gz NGS1043/mapped_clean_reads/NGS1043_sorted_clean.bam 2>> NGS1043/mapped_clean_reads/NGS1043_samtools_fastq.log 
+        
+
+[Thu Jan 28 21:36:21 2021]
+rule run_ivar_variants:
+    input: /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta, /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta.fai, NGS1043/core/NGS1043_viral_reference.mapping.primertrimmed.sorted.bam, /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.gff3
+    output: NGS1043/core/NGS1043_ivar_variants.tsv
+    log: NGS1043/core/NGS1043_ivar_variants.log
+    jobid: 125
+    benchmark: NGS1043/benchmarks/NGS1043_ivar_variants.benchmark.tsv
+    wildcards: sn=NGS1043
+
+(samtools mpileup -aa -A -d 0 --reference /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta -B -Q 0 NGS1043/core/NGS1043_viral_reference.mapping.primertrimmed.sorted.bam | ivar variants -r /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta -m 10 -p NGS1043/core/NGS1043_ivar_variants -q 20 -t 0.25 -g /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.gff3) 2> NGS1043/core/NGS1043_ivar_variants.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/5258de7f
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+Activating conda environment: /home/maria/SNAKE_COVID/conda/5258de7f
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 21:36:28 2021]
+Finished job 134.
+108 of 164 steps (66%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:36:28 2021]
+rule generate_coverage_plot:
+    input: NGS1043/coverage/NGS1043_depth.txt
+    output: NGS1043/coverage/NGS1043_coverage_plot.png
+    jobid: 143
+    wildcards: sn=NGS1043
+
+/home/maria/covid_analysis_pavlos/covid-19-signal/scripts/generate_coverage_plot.py NGS1043/coverage/NGS1043_depth.txt NGS1043/coverage/NGS1043_coverage_plot.png
+[Thu Jan 28 21:36:30 2021]
+Finished job 115.
+109 of 164 steps (66%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:36:30 2021]
+rule run_quast:
+    input: NGS1043/core/NGS1043.consensus.fa
+    output: NGS1043/quast/NGS1043_quast_report.html
+    log: NGS1043/quast/NGS1043_quast.log
+    jobid: 161
+    benchmark: NGS1043/benchmarks/NGS1043_run_quast.benchmark.tsv
+    wildcards: sn=NGS1043
+
+quast NGS1043/core/NGS1043.consensus.fa -r /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta -g /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.gff3 --output-dir NGS1043/quast --threads 1 >NGS1043/quast/NGS1043_quast.log && for f in NGS1043/quast/report.*; do mv $f ${f/report/NGS1043_quast_report}; done
+Activating conda environment: /home/maria/SNAKE_COVID/conda/4bc6b9de
+[Thu Jan 28 21:36:31 2021]
+Error in rule generate_coverage_plot:
+    jobid: 143
+    output: NGS1043/coverage/NGS1043_coverage_plot.png
+    conda-env: /home/maria/SNAKE_COVID/conda/4bc6b9de
+    shell:
+        /home/maria/covid_analysis_pavlos/covid-19-signal/scripts/generate_coverage_plot.py NGS1043/coverage/NGS1043_depth.txt NGS1043/coverage/NGS1043_coverage_plot.png
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Job failed, going on with independent jobs.
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver.Run Snakemake with --verbose to see the full solver output for debugging the problem.
+Activating conda environment: /home/maria/SNAKE_COVID/conda/2d0610a0
+[Thu Jan 28 21:36:34 2021]
+Finished job 125.
+110 of 164 steps (67%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver.Run Snakemake with --verbose to see the full solver output for debugging the problem.
+[Thu Jan 28 21:36:37 2021]
+Finished job 161.
+111 of 164 steps (68%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver.Run Snakemake with --verbose to see the full solver output for debugging the problem.
+[Thu Jan 28 21:36:41 2021]
+Finished job 95.
+112 of 164 steps (68%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:36:41 2021]
+rule raw_reads_composite_reference_bwa_map:
+    input: NGS0990/raw_fastq/NGS0990_R1.fastq.gz, NGS0990/raw_fastq/NGS0990_R2.fastq.gz
+    output: NGS0990/host_removal/NGS0990_viral_and_nonmapping_reads.bam
+    log: NGS0990/host_removal/NGS0990_human_read_mapping.log
+    jobid: 20
+    benchmark: NGS0990/benchmarks/NGS0990_composite_reference_bwa_map.benchmark.tsv
+    wildcards: sn=NGS0990
+    threads: 4
+
+(conda info --envs; bwa mem -t 4 /home/maria/covid_analysis_pavlos/covid-19-signal/data/composite_human_viral_reference.fna NGS0990/raw_fastq/NGS0990_R1.fastq.gz NGS0990/raw_fastq/NGS0990_R2.fastq.gz | /home/maria/covid_analysis_pavlos/covid-19-signal/scripts/filter_non_human_reads.py -c MN908947.3 > NGS0990/host_removal/NGS0990_viral_and_nonmapping_reads.bam) 2> NGS0990/host_removal/NGS0990_human_read_mapping.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 21:37:47 2021]
+Finished job 149.
+113 of 164 steps (69%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:37:47 2021]
+rule run_fastqc_on_mapped_reads:
+    input: NGS1043/mapped_clean_reads/NGS1043_R1.fastq.gz, NGS1043/mapped_clean_reads/NGS1043_R2.fastq.gz
+    output: NGS1043/mapped_clean_reads/NGS1043_R1_fastqc.html, NGS1043/mapped_clean_reads/NGS1043_R2_fastqc.html
+    log: NGS1043/mapped_clean_reads/NGS1043_fastqc.log
+    jobid: 94
+    benchmark: NGS1043/benchmarks/NGS1043_clean_fastqc.benchmark.tsv
+    wildcards: sn=NGS1043
+
+
+        fastqc -o NGS1043/mapped_clean_reads NGS1043/mapped_clean_reads/NGS1043_R1.fastq.gz NGS1043/mapped_clean_reads/NGS1043_R2.fastq.gz 2> NGS1043/mapped_clean_reads/NGS1043_fastqc.log
+        
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+[Thu Jan 28 21:38:00 2021]
+Finished job 94.
+114 of 164 steps (70%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver.Run Snakemake with --verbose to see the full solver output for debugging the problem.
+[Thu Jan 28 21:38:51 2021]
+Finished job 20.
+115 of 164 steps (70%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:38:51 2021]
+rule raw_reads_composite_reference_bwa_map:
+    input: NGS1042/raw_fastq/NGS1042_R1.fastq.gz, NGS1042/raw_fastq/NGS1042_R2.fastq.gz
+    output: NGS1042/host_removal/NGS1042_viral_and_nonmapping_reads.bam
+    log: NGS1042/host_removal/NGS1042_human_read_mapping.log
+    jobid: 30
+    benchmark: NGS1042/benchmarks/NGS1042_composite_reference_bwa_map.benchmark.tsv
+    wildcards: sn=NGS1042
+    threads: 4
+
+(conda info --envs; bwa mem -t 4 /home/maria/covid_analysis_pavlos/covid-19-signal/data/composite_human_viral_reference.fna NGS1042/raw_fastq/NGS1042_R1.fastq.gz NGS1042/raw_fastq/NGS1042_R2.fastq.gz | /home/maria/covid_analysis_pavlos/covid-19-signal/scripts/filter_non_human_reads.py -c MN908947.3 > NGS1042/host_removal/NGS1042_viral_and_nonmapping_reads.bam) 2> NGS1042/host_removal/NGS1042_human_read_mapping.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 21:40:29 2021]
+Finished job 82.
+116 of 164 steps (71%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:40:29 2021]
+rule run_bed_primer_trim:
+    input: NGS1040/core/NGS1040_viral_reference.bam
+    output: NGS1040/core/NGS1040_viral_reference.mapping.primertrimmed.sorted.bam, NGS1040/core/NGS1040_viral_reference.mapping.primertrimmed.bam, NGS1040/core/NGS1040_viral_reference.mapping.bam
+    log: NGS1040/core/NGS1040_ivar_trim.log
+    jobid: 81
+    benchmark: NGS1040/benchmarks/NGS1040_bed_primer_trim.benchmark.tsv
+    wildcards: sn=NGS1040
+
+samtools view -F4 -o NGS1040/core/NGS1040_viral_reference.mapping.bam NGS1040/core/NGS1040_viral_reference.bam; samtools index NGS1040/core/NGS1040_viral_reference.mapping.bam; ivar trim -e -i NGS1040/core/NGS1040_viral_reference.mapping.bam -b /home/maria/covid_analysis_pavlos/covid-19-signal/resources/SARSCoV2.paragon.bed -m 20 -q 20 -p NGS1040/core/NGS1040_viral_reference.mapping.primertrimmed 2> NGS1040/core/NGS1040_ivar_trim.log; samtools sort -o NGS1040/core/NGS1040_viral_reference.mapping.primertrimmed.sorted.bam NGS1040/core/NGS1040_viral_reference.mapping.primertrimmed.bam
+
+[Thu Jan 28 21:40:29 2021]
+rule get_host_removed_reads:
+    input: NGS0990/host_removal/NGS0990_viral_and_nonmapping_reads.bam
+    output: NGS0990/host_removal/NGS0990_R1.fastq.gz, NGS0990/host_removal/NGS0990_R2.fastq.gz, NGS0990/host_removal/NGS0990_singletons.fastq.gz, NGS0990/host_removal/NGS0990_viral_and_nonmapping_reads_filtered_sorted.bam
+    log: NGS0990/host_removal/NGS0990_samtools_fastq.log
+    jobid: 19
+    benchmark: NGS0990/benchmarks/NGS0990_get_host_removed_reads.benchmark.tsv
+    wildcards: sn=NGS0990
+    threads: 2
+
+
+        samtools view -b NGS0990/host_removal/NGS0990_viral_and_nonmapping_reads.bam | samtools sort -n -@2 > NGS0990/host_removal/NGS0990_viral_and_nonmapping_reads_filtered_sorted.bam 2> NGS0990/host_removal/NGS0990_samtools_fastq.log
+        samtools fastq -1 NGS0990/host_removal/NGS0990_R1.fastq.gz -2 NGS0990/host_removal/NGS0990_R2.fastq.gz -s NGS0990/host_removal/NGS0990_singletons.fastq.gz NGS0990/host_removal/NGS0990_viral_and_nonmapping_reads_filtered_sorted.bam 2>> NGS0990/host_removal/NGS0990_samtools_fastq.log 
+        
+Activating conda environment: /home/maria/SNAKE_COVID/conda/5258de7f
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 21:41:29 2021]
+Finished job 19.
+117 of 164 steps (71%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:41:29 2021]
+rule run_trimgalore:
+    input: NGS0990/host_removal/NGS0990_R1.fastq.gz, NGS0990/host_removal/NGS0990_R2.fastq.gz
+    output: NGS0990/adapter_trimmed/NGS0990_R1_val_1.fq.gz, NGS0990/adapter_trimmed/NGS0990_R2_val_2.fq.gz, NGS0990/adapter_trimmed/NGS0990_R1_val_1_fastqc.html, NGS0990/adapter_trimmed/NGS0990_R2_val_2_fastqc.html
+    log: NGS0990/adapter_trimmed/NGS0990_trim_galore.log
+    jobid: 37
+    benchmark: NGS0990/benchmarks/NGS0990_trimgalore.benchmark.tsv
+    wildcards: sn=NGS0990
+    priority: 2
+    threads: 2
+
+trim_galore --quality 20 --length 20  -o NGS0990/adapter_trimmed --cores 2 --fastqc --paired NGS0990/host_removal/NGS0990_R1.fastq.gz NGS0990/host_removal/NGS0990_R2.fastq.gz 2> NGS0990/adapter_trimmed/NGS0990_trim_galore.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+[Thu Jan 28 21:42:31 2021]
+Finished job 37.
+118 of 164 steps (72%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:42:31 2021]
+rule run_filtering_of_residual_adapters:
+    input: NGS0990/adapter_trimmed/NGS0990_R1_val_1.fq.gz, NGS0990/adapter_trimmed/NGS0990_R2_val_2.fq.gz
+    output: NGS0990/adapter_trimmed/NGS0990_R1_val_1_posttrim_filter.fq.gz, NGS0990/adapter_trimmed/NGS0990_R2_val_2_posttrim_filter.fq.gz
+    jobid: 46
+    wildcards: sn=NGS0990
+    priority: 2
+    threads: 2
+
+
+	python3.6 /home/maria/covid_analysis_pavlos/covid-19-signal/scripts/filter_residual_adapters.py --input_R1 NGS0990/adapter_trimmed/NGS0990_R1_val_1.fq.gz --input_R2 NGS0990/adapter_trimmed/NGS0990_R2_val_2.fq.gz
+	
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 21:46:11 2021]
+Finished job 46.
+119 of 164 steps (73%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:46:11 2021]
+rule viral_reference_bwa_map:
+    input: NGS0990/adapter_trimmed/NGS0990_R1_val_1_posttrim_filter.fq.gz, NGS0990/adapter_trimmed/NGS0990_R2_val_2_posttrim_filter.fq.gz, NGS0990/core/viral_reference.bwt
+    output: NGS0990/core/NGS0990_viral_reference.bam
+    log: NGS0990/core/NGS0990_viral_reference_bwa.log
+    jobid: 67
+    benchmark: NGS0990/benchmarks/NGS0990_viral_reference_bwa_map.benchmark.tsv
+    wildcards: sn=NGS0990
+    threads: 2
+
+(bwa mem -t 2 NGS0990/core/viral_reference NGS0990/adapter_trimmed/NGS0990_R1_val_1_posttrim_filter.fq.gz NGS0990/adapter_trimmed/NGS0990_R2_val_2_posttrim_filter.fq.gz | samtools view -bS | samtools sort -@2 -o NGS0990/core/NGS0990_viral_reference.bam) 2> NGS0990/core/NGS0990_viral_reference_bwa.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 21:46:57 2021]
+Finished job 67.
+120 of 164 steps (73%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:46:57 2021]
+rule run_kraken2:
+    input: NGS0990/adapter_trimmed/NGS0990_R1_val_1_posttrim_filter.fq.gz, NGS0990/adapter_trimmed/NGS0990_R2_val_2_posttrim_filter.fq.gz
+    output: NGS0990/kraken2/NGS0990_kraken2.out
+    log: NGS0990/kraken2/NGS0990_kraken2.log
+    jobid: 146
+    benchmark: NGS0990/benchmarks/NGS0990_run_kraken2.benchmark.tsv
+    wildcards: sn=NGS0990
+
+cd NGS0990/kraken2 && kraken2 --db /home/maria/covid_analysis_pavlos/covid-19-signal/data/Kraken2/db --threads 1 --quick --unclassified-out "NGS0990_kraken2_unclassified_reads#" --classified-out "NGS0990_kraken2_classified_reads#" --output NGS0990_kraken2.out --paired --gzip-compressed ../../NGS0990/adapter_trimmed/NGS0990_R1_val_1_posttrim_filter.fq.gz ../../NGS0990/adapter_trimmed/NGS0990_R2_val_2_posttrim_filter.fq.gz --report NGS0990_kraken2.report 2>../../NGS0990/kraken2/NGS0990_kraken2.log
+
+[Thu Jan 28 21:46:57 2021]
+rule run_bed_primer_trim:
+    input: NGS0990/core/NGS0990_viral_reference.bam
+    output: NGS0990/core/NGS0990_viral_reference.mapping.primertrimmed.sorted.bam, NGS0990/core/NGS0990_viral_reference.mapping.primertrimmed.bam, NGS0990/core/NGS0990_viral_reference.mapping.bam
+    log: NGS0990/core/NGS0990_ivar_trim.log
+    jobid: 66
+    benchmark: NGS0990/benchmarks/NGS0990_bed_primer_trim.benchmark.tsv
+    wildcards: sn=NGS0990
+
+samtools view -F4 -o NGS0990/core/NGS0990_viral_reference.mapping.bam NGS0990/core/NGS0990_viral_reference.bam; samtools index NGS0990/core/NGS0990_viral_reference.mapping.bam; ivar trim -e -i NGS0990/core/NGS0990_viral_reference.mapping.bam -b /home/maria/covid_analysis_pavlos/covid-19-signal/resources/SARSCoV2.paragon.bed -m 20 -q 20 -p NGS0990/core/NGS0990_viral_reference.mapping.primertrimmed 2> NGS0990/core/NGS0990_ivar_trim.log; samtools sort -o NGS0990/core/NGS0990_viral_reference.mapping.primertrimmed.sorted.bam NGS0990/core/NGS0990_viral_reference.mapping.primertrimmed.bam
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+Activating conda environment: /home/maria/SNAKE_COVID/conda/5258de7f
+[Thu Jan 28 21:47:21 2021]
+Finished job 146.
+121 of 164 steps (74%) done
+[Thu Jan 28 21:48:28 2021]
+Finished job 30.
+122 of 164 steps (74%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:48:28 2021]
+rule get_host_removed_reads:
+    input: NGS1042/host_removal/NGS1042_viral_and_nonmapping_reads.bam
+    output: NGS1042/host_removal/NGS1042_R1.fastq.gz, NGS1042/host_removal/NGS1042_R2.fastq.gz, NGS1042/host_removal/NGS1042_singletons.fastq.gz, NGS1042/host_removal/NGS1042_viral_and_nonmapping_reads_filtered_sorted.bam
+    log: NGS1042/host_removal/NGS1042_samtools_fastq.log
+    jobid: 29
+    benchmark: NGS1042/benchmarks/NGS1042_get_host_removed_reads.benchmark.tsv
+    wildcards: sn=NGS1042
+    threads: 2
+
+
+        samtools view -b NGS1042/host_removal/NGS1042_viral_and_nonmapping_reads.bam | samtools sort -n -@2 > NGS1042/host_removal/NGS1042_viral_and_nonmapping_reads_filtered_sorted.bam 2> NGS1042/host_removal/NGS1042_samtools_fastq.log
+        samtools fastq -1 NGS1042/host_removal/NGS1042_R1.fastq.gz -2 NGS1042/host_removal/NGS1042_R2.fastq.gz -s NGS1042/host_removal/NGS1042_singletons.fastq.gz NGS1042/host_removal/NGS1042_viral_and_nonmapping_reads_filtered_sorted.bam 2>> NGS1042/host_removal/NGS1042_samtools_fastq.log 
+        
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 21:49:38 2021]
+Finished job 66.
+123 of 164 steps (75%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:49:38 2021]
+rule get_mapping_reads:
+    input: NGS0990/core/NGS0990_viral_reference.mapping.primertrimmed.bam
+    output: NGS0990/mapped_clean_reads/NGS0990_R1.fastq.gz, NGS0990/mapped_clean_reads/NGS0990_R2.fastq.gz, NGS0990/mapped_clean_reads/NGS0990_singletons.fastq.gz, NGS0990/mapped_clean_reads/NGS0990_sorted_clean.bam
+    log: NGS0990/mapped_clean_reads/NGS0990_samtools_fastq.log
+    jobid: 65
+    benchmark: NGS0990/benchmarks/NGS0990_get_mapping_reads.benchmark.tsv
+    wildcards: sn=NGS0990
+    priority: 2
+
+
+        samtools sort -n NGS0990/core/NGS0990_viral_reference.mapping.primertrimmed.bam -o NGS0990/mapped_clean_reads/NGS0990_sorted_clean.bam 2> NGS0990/mapped_clean_reads/NGS0990_samtools_fastq.log
+        samtools fastq -1 NGS0990/mapped_clean_reads/NGS0990_R1.fastq.gz -2 NGS0990/mapped_clean_reads/NGS0990_R2.fastq.gz -s NGS0990/mapped_clean_reads/NGS0990_singletons.fastq.gz NGS0990/mapped_clean_reads/NGS0990_sorted_clean.bam 2>> NGS0990/mapped_clean_reads/NGS0990_samtools_fastq.log 
+        
+
+[Thu Jan 28 21:49:38 2021]
+rule run_ivar_variants:
+    input: /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta, /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta.fai, NGS0990/core/NGS0990_viral_reference.mapping.primertrimmed.sorted.bam, /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.gff3
+    output: NGS0990/core/NGS0990_ivar_variants.tsv
+    log: NGS0990/core/NGS0990_ivar_variants.log
+    jobid: 118
+    benchmark: NGS0990/benchmarks/NGS0990_ivar_variants.benchmark.tsv
+    wildcards: sn=NGS0990
+
+(samtools mpileup -aa -A -d 0 --reference /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta -B -Q 0 NGS0990/core/NGS0990_viral_reference.mapping.primertrimmed.sorted.bam | ivar variants -r /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta -m 10 -p NGS0990/core/NGS0990_ivar_variants -q 20 -t 0.25 -g /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.gff3) 2> NGS0990/core/NGS0990_ivar_variants.log
+
+[Thu Jan 28 21:49:38 2021]
+rule run_ivar_consensus:
+    input: NGS0990/core/NGS0990_viral_reference.mapping.primertrimmed.sorted.bam
+    output: NGS0990/core/NGS0990.consensus.fa
+    log: NGS0990/core/NGS0990_ivar_consensus.log
+    jobid: 109
+    benchmark: NGS0990/benchmarks/NGS0990_ivar_consensus.benchmark.tsv
+    wildcards: sn=NGS0990
+
+(samtools mpileup -aa -A -d 100000 -Q0 NGS0990/core/NGS0990_viral_reference.mapping.primertrimmed.sorted.bam | ivar consensus -t 0.75 -m 10 -n N -p NGS0990/core/NGS0990.consensus) 2>NGS0990/core/NGS0990_ivar_consensus.log
+
+[Thu Jan 28 21:49:38 2021]
+rule coverage_depth:
+    input: NGS0990/core/NGS0990_viral_reference.mapping.primertrimmed.sorted.bam
+    output: NGS0990/coverage/NGS0990_depth.txt
+    jobid: 128
+    benchmark: NGS0990/benchmarks/NGS0990_coverage_depth.benchmark.tsv
+    wildcards: sn=NGS0990
+
+bedtools genomecov -d -ibam NGS0990/core/NGS0990_viral_reference.mapping.primertrimmed.sorted.bam >NGS0990/coverage/NGS0990_depth.txt
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+Activating conda environment: /home/maria/SNAKE_COVID/conda/5258de7f
+Activating conda environment: /home/maria/SNAKE_COVID/conda/5258de7f
+[Thu Jan 28 21:49:50 2021]
+Finished job 128.
+124 of 164 steps (76%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:49:50 2021]
+rule generate_coverage_plot:
+    input: NGS0990/coverage/NGS0990_depth.txt
+    output: NGS0990/coverage/NGS0990_coverage_plot.png
+    jobid: 137
+    wildcards: sn=NGS0990
+
+/home/maria/covid_analysis_pavlos/covid-19-signal/scripts/generate_coverage_plot.py NGS0990/coverage/NGS0990_depth.txt NGS0990/coverage/NGS0990_coverage_plot.png
+Activating conda environment: /home/maria/SNAKE_COVID/conda/4bc6b9de
+[Thu Jan 28 21:49:53 2021]
+Error in rule generate_coverage_plot:
+    jobid: 137
+    output: NGS0990/coverage/NGS0990_coverage_plot.png
+    conda-env: /home/maria/SNAKE_COVID/conda/4bc6b9de
+    shell:
+        /home/maria/covid_analysis_pavlos/covid-19-signal/scripts/generate_coverage_plot.py NGS0990/coverage/NGS0990_depth.txt NGS0990/coverage/NGS0990_coverage_plot.png
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Job failed, going on with independent jobs.
+[Thu Jan 28 21:50:00 2021]
+Finished job 109.
+125 of 164 steps (76%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:50:00 2021]
+rule run_quast:
+    input: NGS0990/core/NGS0990.consensus.fa
+    output: NGS0990/quast/NGS0990_quast_report.html
+    log: NGS0990/quast/NGS0990_quast.log
+    jobid: 155
+    benchmark: NGS0990/benchmarks/NGS0990_run_quast.benchmark.tsv
+    wildcards: sn=NGS0990
+
+quast NGS0990/core/NGS0990.consensus.fa -r /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta -g /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.gff3 --output-dir NGS0990/quast --threads 1 >NGS0990/quast/NGS0990_quast.log && for f in NGS0990/quast/report.*; do mv $f ${f/report/NGS0990_quast_report}; done
+[Thu Jan 28 21:50:01 2021]
+Finished job 118.
+126 of 164 steps (77%) done
+Activating conda environment: /home/maria/SNAKE_COVID/conda/2d0610a0
+[Thu Jan 28 21:50:05 2021]
+Finished job 155.
+127 of 164 steps (77%) done
+[Thu Jan 28 21:50:17 2021]
+Finished job 65.
+128 of 164 steps (78%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:50:17 2021]
+rule run_fastqc_on_mapped_reads:
+    input: NGS0990/mapped_clean_reads/NGS0990_R1.fastq.gz, NGS0990/mapped_clean_reads/NGS0990_R2.fastq.gz
+    output: NGS0990/mapped_clean_reads/NGS0990_R1_fastqc.html, NGS0990/mapped_clean_reads/NGS0990_R2_fastqc.html
+    log: NGS0990/mapped_clean_reads/NGS0990_fastqc.log
+    jobid: 64
+    benchmark: NGS0990/benchmarks/NGS0990_clean_fastqc.benchmark.tsv
+    wildcards: sn=NGS0990
+
+
+        fastqc -o NGS0990/mapped_clean_reads NGS0990/mapped_clean_reads/NGS0990_R1.fastq.gz NGS0990/mapped_clean_reads/NGS0990_R2.fastq.gz 2> NGS0990/mapped_clean_reads/NGS0990_fastqc.log
+        
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+[Thu Jan 28 21:50:31 2021]
+Finished job 64.
+129 of 164 steps (79%) done
+[Thu Jan 28 21:58:00 2021]
+Finished job 29.
+130 of 164 steps (79%) done
+Select jobs to execute...
+
+[Thu Jan 28 21:58:00 2021]
+rule run_trimgalore:
+    input: NGS1042/host_removal/NGS1042_R1.fastq.gz, NGS1042/host_removal/NGS1042_R2.fastq.gz
+    output: NGS1042/adapter_trimmed/NGS1042_R1_val_1.fq.gz, NGS1042/adapter_trimmed/NGS1042_R2_val_2.fq.gz, NGS1042/adapter_trimmed/NGS1042_R1_val_1_fastqc.html, NGS1042/adapter_trimmed/NGS1042_R2_val_2_fastqc.html
+    log: NGS1042/adapter_trimmed/NGS1042_trim_galore.log
+    jobid: 42
+    benchmark: NGS1042/benchmarks/NGS1042_trimgalore.benchmark.tsv
+    wildcards: sn=NGS1042
+    priority: 2
+    threads: 2
+
+trim_galore --quality 20 --length 20  -o NGS1042/adapter_trimmed --cores 2 --fastqc --paired NGS1042/host_removal/NGS1042_R1.fastq.gz NGS1042/host_removal/NGS1042_R2.fastq.gz 2> NGS1042/adapter_trimmed/NGS1042_trim_galore.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+[Thu Jan 28 22:01:18 2021]
+Finished job 106.
+131 of 164 steps (80%) done
+Select jobs to execute...
+
+[Thu Jan 28 22:01:18 2021]
+rule run_ivar_consensus:
+    input: NGS1045/core/NGS1045_viral_reference.mapping.primertrimmed.sorted.bam
+    output: NGS1045/core/NGS1045.consensus.fa
+    log: NGS1045/core/NGS1045_ivar_consensus.log
+    jobid: 117
+    benchmark: NGS1045/benchmarks/NGS1045_ivar_consensus.benchmark.tsv
+    wildcards: sn=NGS1045
+
+(samtools mpileup -aa -A -d 100000 -Q0 NGS1045/core/NGS1045_viral_reference.mapping.primertrimmed.sorted.bam | ivar consensus -t 0.75 -m 10 -n N -p NGS1045/core/NGS1045.consensus) 2>NGS1045/core/NGS1045_ivar_consensus.log
+
+[Thu Jan 28 22:01:18 2021]
+rule coverage_depth:
+    input: NGS1045/core/NGS1045_viral_reference.mapping.primertrimmed.sorted.bam
+    output: NGS1045/coverage/NGS1045_depth.txt
+    jobid: 136
+    benchmark: NGS1045/benchmarks/NGS1045_coverage_depth.benchmark.tsv
+    wildcards: sn=NGS1045
+
+bedtools genomecov -d -ibam NGS1045/core/NGS1045_viral_reference.mapping.primertrimmed.sorted.bam >NGS1045/coverage/NGS1045_depth.txt
+
+[Thu Jan 28 22:01:18 2021]
+rule get_mapping_reads:
+    input: NGS1045/core/NGS1045_viral_reference.mapping.primertrimmed.bam
+    output: NGS1045/mapped_clean_reads/NGS1045_R1.fastq.gz, NGS1045/mapped_clean_reads/NGS1045_R2.fastq.gz, NGS1045/mapped_clean_reads/NGS1045_singletons.fastq.gz, NGS1045/mapped_clean_reads/NGS1045_sorted_clean.bam
+    log: NGS1045/mapped_clean_reads/NGS1045_samtools_fastq.log
+    jobid: 105
+    benchmark: NGS1045/benchmarks/NGS1045_get_mapping_reads.benchmark.tsv
+    wildcards: sn=NGS1045
+    priority: 2
+
+
+        samtools sort -n NGS1045/core/NGS1045_viral_reference.mapping.primertrimmed.bam -o NGS1045/mapped_clean_reads/NGS1045_sorted_clean.bam 2> NGS1045/mapped_clean_reads/NGS1045_samtools_fastq.log
+        samtools fastq -1 NGS1045/mapped_clean_reads/NGS1045_R1.fastq.gz -2 NGS1045/mapped_clean_reads/NGS1045_R2.fastq.gz -s NGS1045/mapped_clean_reads/NGS1045_singletons.fastq.gz NGS1045/mapped_clean_reads/NGS1045_sorted_clean.bam 2>> NGS1045/mapped_clean_reads/NGS1045_samtools_fastq.log 
+        
+
+[Thu Jan 28 22:01:18 2021]
+rule run_ivar_variants:
+    input: /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta, /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta.fai, NGS1045/core/NGS1045_viral_reference.mapping.primertrimmed.sorted.bam, /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.gff3
+    output: NGS1045/core/NGS1045_ivar_variants.tsv
+    log: NGS1045/core/NGS1045_ivar_variants.log
+    jobid: 127
+    benchmark: NGS1045/benchmarks/NGS1045_ivar_variants.benchmark.tsv
+    wildcards: sn=NGS1045
+
+(samtools mpileup -aa -A -d 0 --reference /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta -B -Q 0 NGS1045/core/NGS1045_viral_reference.mapping.primertrimmed.sorted.bam | ivar variants -r /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta -m 10 -p NGS1045/core/NGS1045_ivar_variants -q 20 -t 0.25 -g /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.gff3) 2> NGS1045/core/NGS1045_ivar_variants.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+Activating conda environment: /home/maria/SNAKE_COVID/conda/5258de7f
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+Activating conda environment: /home/maria/SNAKE_COVID/conda/5258de7f
+[Thu Jan 28 22:03:05 2021]
+Finished job 136.
+132 of 164 steps (80%) done
+Select jobs to execute...
+
+[Thu Jan 28 22:03:05 2021]
+rule generate_coverage_plot:
+    input: NGS1045/coverage/NGS1045_depth.txt
+    output: NGS1045/coverage/NGS1045_coverage_plot.png
+    jobid: 145
+    wildcards: sn=NGS1045
+
+/home/maria/covid_analysis_pavlos/covid-19-signal/scripts/generate_coverage_plot.py NGS1045/coverage/NGS1045_depth.txt NGS1045/coverage/NGS1045_coverage_plot.png
+Activating conda environment: /home/maria/SNAKE_COVID/conda/4bc6b9de
+[Thu Jan 28 22:03:08 2021]
+Error in rule generate_coverage_plot:
+    jobid: 145
+    output: NGS1045/coverage/NGS1045_coverage_plot.png
+    conda-env: /home/maria/SNAKE_COVID/conda/4bc6b9de
+    shell:
+        /home/maria/covid_analysis_pavlos/covid-19-signal/scripts/generate_coverage_plot.py NGS1045/coverage/NGS1045_depth.txt NGS1045/coverage/NGS1045_coverage_plot.png
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Job failed, going on with independent jobs.
+[Thu Jan 28 22:06:57 2021]
+Finished job 42.
+133 of 164 steps (81%) done
+Select jobs to execute...
+
+[Thu Jan 28 22:06:57 2021]
+rule run_filtering_of_residual_adapters:
+    input: NGS1042/adapter_trimmed/NGS1042_R1_val_1.fq.gz, NGS1042/adapter_trimmed/NGS1042_R2_val_2.fq.gz
+    output: NGS1042/adapter_trimmed/NGS1042_R1_val_1_posttrim_filter.fq.gz, NGS1042/adapter_trimmed/NGS1042_R2_val_2_posttrim_filter.fq.gz
+    jobid: 51
+    wildcards: sn=NGS1042
+    priority: 2
+    threads: 2
+
+
+	python3.6 /home/maria/covid_analysis_pavlos/covid-19-signal/scripts/filter_residual_adapters.py --input_R1 NGS1042/adapter_trimmed/NGS1042_R1_val_1.fq.gz --input_R2 NGS1042/adapter_trimmed/NGS1042_R2_val_2.fq.gz
+	
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+[Thu Jan 28 22:07:03 2021]
+Finished job 117.
+134 of 164 steps (82%) done
+Select jobs to execute...
+
+[Thu Jan 28 22:07:03 2021]
+rule run_quast:
+    input: NGS1045/core/NGS1045.consensus.fa
+    output: NGS1045/quast/NGS1045_quast_report.html
+    log: NGS1045/quast/NGS1045_quast.log
+    jobid: 163
+    benchmark: NGS1045/benchmarks/NGS1045_run_quast.benchmark.tsv
+    wildcards: sn=NGS1045
+
+quast NGS1045/core/NGS1045.consensus.fa -r /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta -g /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.gff3 --output-dir NGS1045/quast --threads 1 >NGS1045/quast/NGS1045_quast.log && for f in NGS1045/quast/report.*; do mv $f ${f/report/NGS1045_quast_report}; done
+Activating conda environment: /home/maria/SNAKE_COVID/conda/2d0610a0
+[Thu Jan 28 22:07:09 2021]
+Finished job 163.
+135 of 164 steps (82%) done
+[Thu Jan 28 22:08:38 2021]
+Finished job 127.
+136 of 164 steps (83%) done
+[Thu Jan 28 22:08:53 2021]
+Finished job 105.
+137 of 164 steps (84%) done
+Select jobs to execute...
+
+[Thu Jan 28 22:08:53 2021]
+rule run_fastqc_on_mapped_reads:
+    input: NGS1045/mapped_clean_reads/NGS1045_R1.fastq.gz, NGS1045/mapped_clean_reads/NGS1045_R2.fastq.gz
+    output: NGS1045/mapped_clean_reads/NGS1045_R1_fastqc.html, NGS1045/mapped_clean_reads/NGS1045_R2_fastqc.html
+    log: NGS1045/mapped_clean_reads/NGS1045_fastqc.log
+    jobid: 104
+    benchmark: NGS1045/benchmarks/NGS1045_clean_fastqc.benchmark.tsv
+    wildcards: sn=NGS1045
+
+
+        fastqc -o NGS1045/mapped_clean_reads NGS1045/mapped_clean_reads/NGS1045_R1.fastq.gz NGS1045/mapped_clean_reads/NGS1045_R2.fastq.gz 2> NGS1045/mapped_clean_reads/NGS1045_fastqc.log
+        
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+[Thu Jan 28 22:10:34 2021]
+Finished job 104.
+138 of 164 steps (84%) done
+[Thu Jan 28 22:16:37 2021]
+Finished job 81.
+139 of 164 steps (85%) done
+Select jobs to execute...
+
+[Thu Jan 28 22:16:37 2021]
+rule coverage_depth:
+    input: NGS1040/core/NGS1040_viral_reference.mapping.primertrimmed.sorted.bam
+    output: NGS1040/coverage/NGS1040_depth.txt
+    jobid: 131
+    benchmark: NGS1040/benchmarks/NGS1040_coverage_depth.benchmark.tsv
+    wildcards: sn=NGS1040
+
+bedtools genomecov -d -ibam NGS1040/core/NGS1040_viral_reference.mapping.primertrimmed.sorted.bam >NGS1040/coverage/NGS1040_depth.txt
+
+[Thu Jan 28 22:16:37 2021]
+rule run_ivar_variants:
+    input: /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta, /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta.fai, NGS1040/core/NGS1040_viral_reference.mapping.primertrimmed.sorted.bam, /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.gff3
+    output: NGS1040/core/NGS1040_ivar_variants.tsv
+    log: NGS1040/core/NGS1040_ivar_variants.log
+    jobid: 122
+    benchmark: NGS1040/benchmarks/NGS1040_ivar_variants.benchmark.tsv
+    wildcards: sn=NGS1040
+
+(samtools mpileup -aa -A -d 0 --reference /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta -B -Q 0 NGS1040/core/NGS1040_viral_reference.mapping.primertrimmed.sorted.bam | ivar variants -r /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta -m 10 -p NGS1040/core/NGS1040_ivar_variants -q 20 -t 0.25 -g /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.gff3) 2> NGS1040/core/NGS1040_ivar_variants.log
+
+[Thu Jan 28 22:16:37 2021]
+rule get_mapping_reads:
+    input: NGS1040/core/NGS1040_viral_reference.mapping.primertrimmed.bam
+    output: NGS1040/mapped_clean_reads/NGS1040_R1.fastq.gz, NGS1040/mapped_clean_reads/NGS1040_R2.fastq.gz, NGS1040/mapped_clean_reads/NGS1040_singletons.fastq.gz, NGS1040/mapped_clean_reads/NGS1040_sorted_clean.bam
+    log: NGS1040/mapped_clean_reads/NGS1040_samtools_fastq.log
+    jobid: 80
+    benchmark: NGS1040/benchmarks/NGS1040_get_mapping_reads.benchmark.tsv
+    wildcards: sn=NGS1040
+    priority: 2
+
+
+        samtools sort -n NGS1040/core/NGS1040_viral_reference.mapping.primertrimmed.bam -o NGS1040/mapped_clean_reads/NGS1040_sorted_clean.bam 2> NGS1040/mapped_clean_reads/NGS1040_samtools_fastq.log
+        samtools fastq -1 NGS1040/mapped_clean_reads/NGS1040_R1.fastq.gz -2 NGS1040/mapped_clean_reads/NGS1040_R2.fastq.gz -s NGS1040/mapped_clean_reads/NGS1040_singletons.fastq.gz NGS1040/mapped_clean_reads/NGS1040_sorted_clean.bam 2>> NGS1040/mapped_clean_reads/NGS1040_samtools_fastq.log 
+        
+
+[Thu Jan 28 22:16:37 2021]
+rule run_ivar_consensus:
+    input: NGS1040/core/NGS1040_viral_reference.mapping.primertrimmed.sorted.bam
+    output: NGS1040/core/NGS1040.consensus.fa
+    log: NGS1040/core/NGS1040_ivar_consensus.log
+    jobid: 112
+    benchmark: NGS1040/benchmarks/NGS1040_ivar_consensus.benchmark.tsv
+    wildcards: sn=NGS1040
+
+(samtools mpileup -aa -A -d 100000 -Q0 NGS1040/core/NGS1040_viral_reference.mapping.primertrimmed.sorted.bam | ivar consensus -t 0.75 -m 10 -n N -p NGS1040/core/NGS1040.consensus) 2>NGS1040/core/NGS1040_ivar_consensus.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/5258de7f
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+Activating conda environment: /home/maria/SNAKE_COVID/conda/5258de7f
+[Thu Jan 28 22:18:09 2021]
+Finished job 131.
+140 of 164 steps (85%) done
+Select jobs to execute...
+
+[Thu Jan 28 22:18:09 2021]
+rule generate_coverage_plot:
+    input: NGS1040/coverage/NGS1040_depth.txt
+    output: NGS1040/coverage/NGS1040_coverage_plot.png
+    jobid: 140
+    wildcards: sn=NGS1040
+
+/home/maria/covid_analysis_pavlos/covid-19-signal/scripts/generate_coverage_plot.py NGS1040/coverage/NGS1040_depth.txt NGS1040/coverage/NGS1040_coverage_plot.png
+Activating conda environment: /home/maria/SNAKE_COVID/conda/4bc6b9de
+[Thu Jan 28 22:18:12 2021]
+Error in rule generate_coverage_plot:
+    jobid: 140
+    output: NGS1040/coverage/NGS1040_coverage_plot.png
+    conda-env: /home/maria/SNAKE_COVID/conda/4bc6b9de
+    shell:
+        /home/maria/covid_analysis_pavlos/covid-19-signal/scripts/generate_coverage_plot.py NGS1040/coverage/NGS1040_depth.txt NGS1040/coverage/NGS1040_coverage_plot.png
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Job failed, going on with independent jobs.
+[Thu Jan 28 22:22:03 2021]
+Finished job 112.
+141 of 164 steps (86%) done
+Select jobs to execute...
+
+[Thu Jan 28 22:22:03 2021]
+rule run_quast:
+    input: NGS1040/core/NGS1040.consensus.fa
+    output: NGS1040/quast/NGS1040_quast_report.html
+    log: NGS1040/quast/NGS1040_quast.log
+    jobid: 158
+    benchmark: NGS1040/benchmarks/NGS1040_run_quast.benchmark.tsv
+    wildcards: sn=NGS1040
+
+quast NGS1040/core/NGS1040.consensus.fa -r /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta -g /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.gff3 --output-dir NGS1040/quast --threads 1 >NGS1040/quast/NGS1040_quast.log && for f in NGS1040/quast/report.*; do mv $f ${f/report/NGS1040_quast_report}; done
+Activating conda environment: /home/maria/SNAKE_COVID/conda/2d0610a0
+[Thu Jan 28 22:22:08 2021]
+Finished job 158.
+142 of 164 steps (87%) done
+[Thu Jan 28 22:23:31 2021]
+Finished job 122.
+143 of 164 steps (87%) done
+[Thu Jan 28 22:24:08 2021]
+Finished job 80.
+144 of 164 steps (88%) done
+Select jobs to execute...
+
+[Thu Jan 28 22:24:08 2021]
+rule run_fastqc_on_mapped_reads:
+    input: NGS1040/mapped_clean_reads/NGS1040_R1.fastq.gz, NGS1040/mapped_clean_reads/NGS1040_R2.fastq.gz
+    output: NGS1040/mapped_clean_reads/NGS1040_R1_fastqc.html, NGS1040/mapped_clean_reads/NGS1040_R2_fastqc.html
+    log: NGS1040/mapped_clean_reads/NGS1040_fastqc.log
+    jobid: 79
+    benchmark: NGS1040/benchmarks/NGS1040_clean_fastqc.benchmark.tsv
+    wildcards: sn=NGS1040
+
+
+        fastqc -o NGS1040/mapped_clean_reads NGS1040/mapped_clean_reads/NGS1040_R1.fastq.gz NGS1040/mapped_clean_reads/NGS1040_R2.fastq.gz 2> NGS1040/mapped_clean_reads/NGS1040_fastqc.log
+        
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+[Thu Jan 28 22:26:04 2021]
+Finished job 79.
+145 of 164 steps (88%) done
+[Thu Jan 28 22:43:29 2021]
+Finished job 51.
+146 of 164 steps (89%) done
+Select jobs to execute...
+
+[Thu Jan 28 22:43:29 2021]
+rule viral_reference_bwa_map:
+    input: NGS1042/adapter_trimmed/NGS1042_R1_val_1_posttrim_filter.fq.gz, NGS1042/adapter_trimmed/NGS1042_R2_val_2_posttrim_filter.fq.gz, NGS1042/core/viral_reference.bwt
+    output: NGS1042/core/NGS1042_viral_reference.bam
+    log: NGS1042/core/NGS1042_viral_reference_bwa.log
+    jobid: 92
+    benchmark: NGS1042/benchmarks/NGS1042_viral_reference_bwa_map.benchmark.tsv
+    wildcards: sn=NGS1042
+    threads: 2
+
+(bwa mem -t 2 NGS1042/core/viral_reference NGS1042/adapter_trimmed/NGS1042_R1_val_1_posttrim_filter.fq.gz NGS1042/adapter_trimmed/NGS1042_R2_val_2_posttrim_filter.fq.gz | samtools view -bS | samtools sort -@2 -o NGS1042/core/NGS1042_viral_reference.bam) 2> NGS1042/core/NGS1042_viral_reference_bwa.log
+
+[Thu Jan 28 22:43:29 2021]
+rule run_kraken2:
+    input: NGS1042/adapter_trimmed/NGS1042_R1_val_1_posttrim_filter.fq.gz, NGS1042/adapter_trimmed/NGS1042_R2_val_2_posttrim_filter.fq.gz
+    output: NGS1042/kraken2/NGS1042_kraken2.out
+    log: NGS1042/kraken2/NGS1042_kraken2.log
+    jobid: 151
+    benchmark: NGS1042/benchmarks/NGS1042_run_kraken2.benchmark.tsv
+    wildcards: sn=NGS1042
+
+cd NGS1042/kraken2 && kraken2 --db /home/maria/covid_analysis_pavlos/covid-19-signal/data/Kraken2/db --threads 1 --quick --unclassified-out "NGS1042_kraken2_unclassified_reads#" --classified-out "NGS1042_kraken2_classified_reads#" --output NGS1042_kraken2.out --paired --gzip-compressed ../../NGS1042/adapter_trimmed/NGS1042_R1_val_1_posttrim_filter.fq.gz ../../NGS1042/adapter_trimmed/NGS1042_R2_val_2_posttrim_filter.fq.gz --report NGS1042_kraken2.report 2>../../NGS1042/kraken2/NGS1042_kraken2.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+[Thu Jan 28 22:46:45 2021]
+Finished job 151.
+147 of 164 steps (90%) done
+[Thu Jan 28 22:49:47 2021]
+Finished job 92.
+148 of 164 steps (90%) done
+Select jobs to execute...
+
+[Thu Jan 28 22:49:47 2021]
+rule run_bed_primer_trim:
+    input: NGS1042/core/NGS1042_viral_reference.bam
+    output: NGS1042/core/NGS1042_viral_reference.mapping.primertrimmed.sorted.bam, NGS1042/core/NGS1042_viral_reference.mapping.primertrimmed.bam, NGS1042/core/NGS1042_viral_reference.mapping.bam
+    log: NGS1042/core/NGS1042_ivar_trim.log
+    jobid: 91
+    benchmark: NGS1042/benchmarks/NGS1042_bed_primer_trim.benchmark.tsv
+    wildcards: sn=NGS1042
+
+samtools view -F4 -o NGS1042/core/NGS1042_viral_reference.mapping.bam NGS1042/core/NGS1042_viral_reference.bam; samtools index NGS1042/core/NGS1042_viral_reference.mapping.bam; ivar trim -e -i NGS1042/core/NGS1042_viral_reference.mapping.bam -b /home/maria/covid_analysis_pavlos/covid-19-signal/resources/SARSCoV2.paragon.bed -m 20 -q 20 -p NGS1042/core/NGS1042_viral_reference.mapping.primertrimmed 2> NGS1042/core/NGS1042_ivar_trim.log; samtools sort -o NGS1042/core/NGS1042_viral_reference.mapping.primertrimmed.sorted.bam NGS1042/core/NGS1042_viral_reference.mapping.primertrimmed.bam
+Activating conda environment: /home/maria/SNAKE_COVID/conda/5258de7f
+[Thu Jan 28 23:14:30 2021]
+Finished job 91.
+149 of 164 steps (91%) done
+Select jobs to execute...
+
+[Thu Jan 28 23:14:30 2021]
+rule coverage_depth:
+    input: NGS1042/core/NGS1042_viral_reference.mapping.primertrimmed.sorted.bam
+    output: NGS1042/coverage/NGS1042_depth.txt
+    jobid: 133
+    benchmark: NGS1042/benchmarks/NGS1042_coverage_depth.benchmark.tsv
+    wildcards: sn=NGS1042
+
+bedtools genomecov -d -ibam NGS1042/core/NGS1042_viral_reference.mapping.primertrimmed.sorted.bam >NGS1042/coverage/NGS1042_depth.txt
+
+[Thu Jan 28 23:14:30 2021]
+rule get_mapping_reads:
+    input: NGS1042/core/NGS1042_viral_reference.mapping.primertrimmed.bam
+    output: NGS1042/mapped_clean_reads/NGS1042_R1.fastq.gz, NGS1042/mapped_clean_reads/NGS1042_R2.fastq.gz, NGS1042/mapped_clean_reads/NGS1042_singletons.fastq.gz, NGS1042/mapped_clean_reads/NGS1042_sorted_clean.bam
+    log: NGS1042/mapped_clean_reads/NGS1042_samtools_fastq.log
+    jobid: 90
+    benchmark: NGS1042/benchmarks/NGS1042_get_mapping_reads.benchmark.tsv
+    wildcards: sn=NGS1042
+    priority: 2
+
+
+        samtools sort -n NGS1042/core/NGS1042_viral_reference.mapping.primertrimmed.bam -o NGS1042/mapped_clean_reads/NGS1042_sorted_clean.bam 2> NGS1042/mapped_clean_reads/NGS1042_samtools_fastq.log
+        samtools fastq -1 NGS1042/mapped_clean_reads/NGS1042_R1.fastq.gz -2 NGS1042/mapped_clean_reads/NGS1042_R2.fastq.gz -s NGS1042/mapped_clean_reads/NGS1042_singletons.fastq.gz NGS1042/mapped_clean_reads/NGS1042_sorted_clean.bam 2>> NGS1042/mapped_clean_reads/NGS1042_samtools_fastq.log 
+        
+
+[Thu Jan 28 23:14:30 2021]
+rule run_ivar_variants:
+    input: /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta, /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta.fai, NGS1042/core/NGS1042_viral_reference.mapping.primertrimmed.sorted.bam, /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.gff3
+    output: NGS1042/core/NGS1042_ivar_variants.tsv
+    log: NGS1042/core/NGS1042_ivar_variants.log
+    jobid: 124
+    benchmark: NGS1042/benchmarks/NGS1042_ivar_variants.benchmark.tsv
+    wildcards: sn=NGS1042
+
+(samtools mpileup -aa -A -d 0 --reference /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta -B -Q 0 NGS1042/core/NGS1042_viral_reference.mapping.primertrimmed.sorted.bam | ivar variants -r /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta -m 10 -p NGS1042/core/NGS1042_ivar_variants -q 20 -t 0.25 -g /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.gff3) 2> NGS1042/core/NGS1042_ivar_variants.log
+
+[Thu Jan 28 23:14:30 2021]
+rule run_ivar_consensus:
+    input: NGS1042/core/NGS1042_viral_reference.mapping.primertrimmed.sorted.bam
+    output: NGS1042/core/NGS1042.consensus.fa
+    log: NGS1042/core/NGS1042_ivar_consensus.log
+    jobid: 114
+    benchmark: NGS1042/benchmarks/NGS1042_ivar_consensus.benchmark.tsv
+    wildcards: sn=NGS1042
+
+(samtools mpileup -aa -A -d 100000 -Q0 NGS1042/core/NGS1042_viral_reference.mapping.primertrimmed.sorted.bam | ivar consensus -t 0.75 -m 10 -n N -p NGS1042/core/NGS1042.consensus) 2>NGS1042/core/NGS1042_ivar_consensus.log
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+Activating conda environment: /home/maria/SNAKE_COVID/conda/3850436d
+Activating conda environment: /home/maria/SNAKE_COVID/conda/5258de7f
+Activating conda environment: /home/maria/SNAKE_COVID/conda/5258de7f
+[Thu Jan 28 23:15:38 2021]
+Finished job 133.
+150 of 164 steps (91%) done
+Select jobs to execute...
+
+[Thu Jan 28 23:15:38 2021]
+rule generate_coverage_plot:
+    input: NGS1042/coverage/NGS1042_depth.txt
+    output: NGS1042/coverage/NGS1042_coverage_plot.png
+    jobid: 142
+    wildcards: sn=NGS1042
+
+/home/maria/covid_analysis_pavlos/covid-19-signal/scripts/generate_coverage_plot.py NGS1042/coverage/NGS1042_depth.txt NGS1042/coverage/NGS1042_coverage_plot.png
+Activating conda environment: /home/maria/SNAKE_COVID/conda/4bc6b9de
+[Thu Jan 28 23:15:46 2021]
+Finished job 142.
+151 of 164 steps (92%) done
+[Thu Jan 28 23:19:16 2021]
+Finished job 114.
+152 of 164 steps (93%) done
+Select jobs to execute...
+
+[Thu Jan 28 23:19:16 2021]
+rule run_quast:
+    input: NGS1042/core/NGS1042.consensus.fa
+    output: NGS1042/quast/NGS1042_quast_report.html
+    log: NGS1042/quast/NGS1042_quast.log
+    jobid: 160
+    benchmark: NGS1042/benchmarks/NGS1042_run_quast.benchmark.tsv
+    wildcards: sn=NGS1042
+
+quast NGS1042/core/NGS1042.consensus.fa -r /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.fasta -g /home/maria/covid_analysis_pavlos/covid-19-signal/data/MN908947.3.gff3 --output-dir NGS1042/quast --threads 1 >NGS1042/quast/NGS1042_quast.log && for f in NGS1042/quast/report.*; do mv $f ${f/report/NGS1042_quast_report}; done
+Activating conda environment: /home/maria/SNAKE_COVID/conda/2d0610a0
+[Thu Jan 28 23:19:21 2021]
+Finished job 160.
+153 of 164 steps (93%) done
+[Thu Jan 28 23:20:07 2021]
+Finished job 124.
+154 of 164 steps (94%) done
+[Thu Jan 28 23:20:30 2021]
+Finished job 90.
+155 of 164 steps (95%) done
+Select jobs to execute...
+
+[Thu Jan 28 23:20:30 2021]
+rule run_fastqc_on_mapped_reads:
+    input: NGS1042/mapped_clean_reads/NGS1042_R1.fastq.gz, NGS1042/mapped_clean_reads/NGS1042_R2.fastq.gz
+    output: NGS1042/mapped_clean_reads/NGS1042_R1_fastqc.html, NGS1042/mapped_clean_reads/NGS1042_R2_fastqc.html
+    log: NGS1042/mapped_clean_reads/NGS1042_fastqc.log
+    jobid: 89
+    benchmark: NGS1042/benchmarks/NGS1042_clean_fastqc.benchmark.tsv
+    wildcards: sn=NGS1042
+
+
+        fastqc -o NGS1042/mapped_clean_reads NGS1042/mapped_clean_reads/NGS1042_R1.fastq.gz NGS1042/mapped_clean_reads/NGS1042_R2.fastq.gz 2> NGS1042/mapped_clean_reads/NGS1042_fastqc.log
+        
+Activating conda environment: /home/maria/SNAKE_COVID/conda/b95377fd
+[Thu Jan 28 23:22:00 2021]
+Finished job 89.
+156 of 164 steps (95%) done
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/maria/covid_analysis_pavlos/covid-19-signal/.snakemake/log/2021-01-28T194932.692546.snakemake.log
