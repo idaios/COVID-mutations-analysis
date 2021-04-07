@@ -174,4 +174,4 @@ The signal pipeline is described in this file: [The signal pipeline](2021-01-28T
 The within-patient-variability was estimated by the typical process of mapping short-read to the reference genome and following the **SIGNAL** pipeline.  For the Greek samples used in the analysis, we follow the exact SIGNAL pipeline to identify as accurately as possible the mutations present in the samples as well as their frequency. For the Brazilian samples we followed a simpler pipeline, in which only mapping (bwa) and `samtools mpileup` was used, since we were interested only in the bases that are mapped at certain locations.  
 
 #### Between patients divergence
-The between-patient-variability was measured by data from the *GISAID* website. We used the 0312 version (i.e. March 12th, 2021). 
+The between-patient-variability was measured by data from the *GISAID* website. We used the 0312 version (i.e. March 12th, 2021). Data are already aligned 
